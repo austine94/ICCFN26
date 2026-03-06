@@ -1,0 +1,6 @@
+model,3
+gemma3:4b,18.0
+llama3.2:3b,-26.0
+llama3:8b,-8.0
+phi4-mini,-8.0
+smollm2:360m,-4.0
