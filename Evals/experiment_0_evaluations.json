@@ -1,0 +1,3002 @@
+{
+    "1": {
+        "cve_id": "CVE-2001-1496",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately captures the mechanism and impact, though it omits the specific version range mentioned in the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Provides a concise and accurate summary of the vulnerability, though it also omits the specific version range."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 10,
+                "rationale": "Perfectly captures the mechanism, impact, and the specific version range provided in the ground truth."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 8,
+                "rationale": "Accurate summary, but includes unnecessary conversational filler and omits the version range."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 1,
+                "rationale": "Contains severe hallucinations by misidentifying the software as Apache Tomcat and attributing the discovery to Hugging Face."
+            }
+        ]
+    },
+    "2": {
+        "cve_id": "CVE-2004-0179",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 7,
+                "rationale": "Accurate regarding the mechanism and impact, but fails to mention the specific affected software or the WebDAV vector."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Concise and accurate, correctly identifying the affected software and the specific attack vector."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 10,
+                "rationale": "Highly accurate, capturing all critical details including the version, affected products, and the specific WebDAV protocol vector."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 9,
+                "rationale": "Very accurate and clear, though the inclusion of conversational filler text slightly detracts from the conciseness."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 6,
+                "rationale": "Contains a hallucination by incorrectly identifying Cadaver as a library rather than a product using the neon library."
+            }
+        ]
+    },
+    "3": {
+        "cve_id": "CVE-2003-1529",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately captures the mechanism and impact, though it omits the specific version numbers mentioned in the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 8,
+                "rationale": "Provides a good summary of the mechanism but fails to mention the specific product version constraints."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 9,
+                "rationale": "Concise and accurate, correctly identifying the product, version range, and the nature of the vulnerability."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 10,
+                "rationale": "Highly accurate, includes the specific exploit string, version context, and impact without unnecessary filler."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 6,
+                "rationale": "Correctly identifies the version range but incorrectly attributes the cause to 'missing encoding' rather than the handling of the provided encoded sequence."
+            }
+        ]
+    },
+    "4": {
+        "cve_id": "CVE-2002-2417",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately captures the mechanism and impact without introducing hallucinations."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Concise and accurate summary that correctly identifies the authentication flaw and its consequences."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 9,
+                "rationale": "Provides a clear and accurate explanation of the vulnerability mechanism and its security implications."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 3,
+                "rationale": "The model hallucinates a 'buffer overflow' issue which is not present in the ground truth description."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 8,
+                "rationale": "Very concise and accurate, though slightly less detailed than the top-scoring models."
+            }
+        ]
+    },
+    "5": {
+        "cve_id": "CVE-2003-1496",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately captures the core details and impact while maintaining a professional tone."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Provides a clear and concise summary that correctly identifies the component and the nature of the risk."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 10,
+                "rationale": "Excellent summary that includes the specific component, version range, and the relevant context regarding the potential overlap with CVE-1999-0840."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 8,
+                "rationale": "Accurate, but includes unnecessary conversational filler at the beginning."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 8,
+                "rationale": "Very close to the ground truth, though it adds a slight assumption about data exposure not explicitly mentioned in the source."
+            }
+        ]
+    },
+    "6": {
+        "cve_id": "CVE-2003-1452",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 7,
+                "rationale": "Accurately identifies the vulnerability type and impact, but incorrectly describes the mechanism as injecting files rather than manipulating the PATH to execute a malicious program."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Provides a highly accurate and concise summary that correctly identifies the mechanism, affected versions, and the local nature of the attack."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 3,
+                "rationale": "Contains significant hallucinations by incorrectly identifying the attack as remote and misinterpreting the role of SMB shares."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 10,
+                "rationale": "Perfectly captures the vulnerability mechanism, affected versions, and potential impact without any hallucinations."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 5,
+                "rationale": "Correctly identifies the mechanism but provides incorrect version information (4.1) and lacks the specific detail regarding the smbpasswd program."
+            }
+        ]
+    },
+    "7": {
+        "cve_id": "CVE-2003-1444",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately captures the mechanism and impact without introducing significant hallucinations."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Provides a concise and accurate summary that aligns perfectly with the ground truth."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 4,
+                "rationale": "Hallucinates a CVE identifier and incorrectly describes the mechanism as a remote DLL injection."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 7,
+                "rationale": "Correctly identifies the mechanism but incorrectly labels the vulnerability as a local privilege escalation."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 6,
+                "rationale": "Accurately describes the core issue but adds unnecessary speculation about sensitive data exposure."
+            }
+        ]
+    },
+    "8": {
+        "cve_id": "CVE-2001-0566",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 8,
+                "rationale": "Accurate and concise, though it misses the specific detail that the vulnerability occurs even when SNMP is disabled."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 10,
+                "rationale": "Perfectly captures all critical elements of the ground truth, including the specific condition that SNMP is disabled."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 7,
+                "rationale": "Accurate but slightly vague by describing the port as 'unprotected' rather than explicitly mentioning the disabled SNMP state."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 10,
+                "rationale": "Excellent summary that covers all technical requirements and the specific condition of the vulnerability clearly."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 6,
+                "rationale": "Captures the mechanism but fails to mention the critical detail that the vulnerability persists even when SNMP is disabled."
+            }
+        ]
+    },
+    "9": {
+        "cve_id": "CVE-2002-2302",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 2,
+                "rationale": "The model incorrectly identifies the vulnerability as Cross-Site Scripting (XSS), which is a major hallucination."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "The summary is accurate and concise, correctly identifying the price manipulation mechanism without introducing technical hallucinations."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 5,
+                "rationale": "The model incorrectly suggests an SQL injection vulnerability, which is not supported by the ground truth."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 10,
+                "rationale": "This summary perfectly captures the mechanism of unvalidated input via hidden form fields and the resulting impact."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 6,
+                "rationale": "While it correctly identifies the mechanism, it includes a hallucinated discovery date and incorrectly implies access to sensitive financial information."
+            }
+        ]
+    },
+    "10": {
+        "cve_id": "CVE-1999-1152",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 4,
+                "rationale": "The model incorrectly identifies the vulnerability as a denial-of-service (DoS) condition, which is a significant hallucination."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 8,
+                "rationale": "The summary is accurate and concise, though it omits the specific product name mentioned in the ground truth."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 9,
+                "rationale": "This is a highly accurate and professional summary that correctly identifies the mechanism and the potential impact."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 7,
+                "rationale": "The summary is accurate, but it incorrectly labels the issue as an 'authentication bypass' rather than a lack of account lockout/throttling."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 6,
+                "rationale": "The summary is technically correct but lacks the specific detail regarding the failure to disconnect clients, which is the core mechanism."
+            }
+        ]
+    },
+    "11": {
+        "cve_id": "CVE-2003-1336",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately captures the vulnerability and impact, though it slightly misstates the version range by including 6.11 as vulnerable when the ground truth says 'before 6.11'."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Very concise and accurate, though it omits the specific version context provided in the ground truth."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 8,
+                "rationale": "Accurate regarding the mechanism, but introduces a typo ('IRLRC') and slightly complicates the description."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 9,
+                "rationale": "Provides a clear and accurate summary, though it omits the specific version constraint mentioned in the ground truth."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 2,
+                "rationale": "Contains significant hallucinations by incorrectly attributing the vulnerability to a server configuration file rather than the URL handling."
+            }
+        ]
+    },
+    "12": {
+        "cve_id": "CVE-1999-0725",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately captures the mechanism and impact while providing a clear, professional explanation."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Concise and accurate, correctly identifying the vulnerability and its implications without adding unnecessary fluff."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 8,
+                "rationale": "Good summary, though it adds a slight technical interpretation regarding 'improper handling' that was not explicitly in the ground truth."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 10,
+                "rationale": "Perfectly captures the ground truth with high precision and professional clarity."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 6,
+                "rationale": "Accurate regarding the mechanism, but the mention of 'malware' as a potential outcome is a hallucination not supported by the ground truth."
+            }
+        ]
+    },
+    "13": {
+        "cve_id": "CVE-2003-0662",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 8,
+                "rationale": "The summary is accurate and professional, though it omits the specific method name (RunQuery2) mentioned in the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "It captures all technical details accurately, though it adds some speculative impact consequences not explicitly in the ground truth."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 10,
+                "rationale": "This summary is highly accurate, concise, and includes all critical technical identifiers from the ground truth without adding hallucinations."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 9,
+                "rationale": "The summary is a near-perfect restatement of the ground truth, though it includes unnecessary conversational filler at the beginning."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 8,
+                "rationale": "It is technically accurate but slightly repetitive in its phrasing and includes 'data exfiltration' which was not in the original description."
+            }
+        ]
+    },
+    "14": {
+        "cve_id": "CVE-2003-1543",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately captures the mechanism and versions while providing a comprehensive impact analysis without hallucinating specific technical details not implied by the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 10,
+                "rationale": "Provides a highly accurate, concise, and technically precise summary that perfectly aligns with the ground truth description."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 7,
+                "rationale": "Accurate in its description of the impact, but it omits the specific product name and version context provided in the ground truth."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 8,
+                "rationale": "Accurate and clear, though the inclusion of conversational filler text makes it slightly less concise than the top-performing models."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 6,
+                "rationale": "Captures the core mechanism but is overly simplistic and lacks the necessary detail regarding the reflection in error messages."
+            }
+        ]
+    },
+    "15": {
+        "cve_id": "CVE-2003-1520",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately captures the mechanism and impact, though it adds some general context about SQL injection consequences not explicitly in the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Very accurate and concise, though it slightly oversteps by mentioning potential server control which is a common but not explicitly stated consequence."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 8,
+                "rationale": "Accurate, but slightly less precise as it describes the flaw in general terms before mentioning the specific product."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 9,
+                "rationale": "Provides a very clear and accurate summary that aligns perfectly with the ground truth while maintaining professional tone."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 10,
+                "rationale": "Highly accurate and concise, correctly identifying the mechanism and impact while adding a technically sound explanation for the root cause."
+            }
+        ]
+    },
+    "16": {
+        "cve_id": "CVE-2003-1526",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately describes the mechanism and impact without overstating the severity."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 5,
+                "rationale": "Hallucinates that this vulnerability could lead to a compromise of the entire system or unauthorized access, which is not supported by the ground truth."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 8,
+                "rationale": "Accurately identifies the mechanism and the nature of the information disclosure, though slightly wordy."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 7,
+                "rationale": "Accurate, but incorrectly identifies the characters as commas instead of double quotes."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 8,
+                "rationale": "Very concise and accurate, though it lacks the specific character details provided in the ground truth."
+            }
+        ]
+    },
+    "17": {
+        "cve_id": "CVE-2003-1548",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 6,
+                "rationale": "Incorrectly labels the vulnerability as a directory traversal attack, which is a hallucination not supported by the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Accurately summarizes the vulnerability and impact, though it includes unnecessary conversational filler."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 7,
+                "rationale": "Provides a decent summary but lacks the specific context of the affected software and the specific parameter mentioned in the ground truth."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 10,
+                "rationale": "Perfectly captures the mechanism, the specific parameter, and the impact while remaining concise and accurate."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 5,
+                "rationale": "Hallucinates that the vulnerability is triggered by invalid credentials, which is not mentioned in the ground truth."
+            }
+        ]
+    },
+    "18": {
+        "cve_id": "CVE-1999-0284",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 10,
+                "rationale": "Accurately captures the mechanism and impact while remaining concise and free of hallucinations."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 10,
+                "rationale": "Provides a precise summary that includes all key details from the ground truth without unnecessary filler."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 9,
+                "rationale": "Accurate and professional, though it slightly generalizes the list of affected servers."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 10,
+                "rationale": "Excellent summary that clearly explains the technical mechanism and lists the affected software accurately."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 4,
+                "rationale": "Fails to mention the specific buffer overflow mechanism, incorrectly describing it as an issue of excessive requests."
+            }
+        ]
+    },
+    "19": {
+        "cve_id": "CVE-2002-1750",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 10,
+                "rationale": "Accurately identifies the RCE mechanism, the specific script, and the root cause (eval function) without any hallucinations."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Accurately describes the vulnerability and the specific parameter involved, though it adds potential impacts like DoS which were not explicitly in the ground truth."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 8,
+                "rationale": "Provides a good summary of the RCE, but fails to mention the specific 'setup' parameter which is critical to the vulnerability mechanism."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 3,
+                "rationale": "Contains a severe hallucination by misclassifying the vulnerability as Server-Side Request Forgery (SSRF) instead of Remote Code Execution."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 5,
+                "rationale": "Correctly identifies the RCE, but incorrectly claims the script is executed with elevated privileges, which is a hallucination not supported by the ground truth."
+            }
+        ]
+    },
+    "20": {
+        "cve_id": "CVE-2004-0478",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately captures the mechanism, impact, and specific attack vector mentioned in the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Provides a clear and accurate summary that correctly identifies the infinite loop and control character mechanism."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 8,
+                "rationale": "Accurately summarizes the vulnerability, though it generalizes the 'ctrl-U' specific detail slightly more than others."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 7,
+                "rationale": "Good summary of the impact, but misses the specific detail regarding the form input and control character mechanism."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 5,
+                "rationale": "Vague and misses the core context of the Mozilla browser and the specific infinite loop mechanism described."
+            }
+        ]
+    },
+    "21": {
+        "cve_id": "CVE-2004-0330",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 10,
+                "rationale": "Accurately captures the vulnerability type, affected software, version constraint, attack vector, and impact without any hallucinations."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Accurate and concise, though it omits the specific version constraint mentioned in the ground truth."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 7,
+                "rationale": "Correctly identifies the version and impact, but incorrectly generalizes the command as 'time' or 'date' instead of the specific MDTM command."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 9,
+                "rationale": "Very accurate, but the inclusion of conversational filler text makes it slightly less concise than the top-performing model."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 2,
+                "rationale": "Contains significant hallucinations regarding command flags and specific time zone values that were not present in the ground truth."
+            }
+        ]
+    },
+    "22": {
+        "cve_id": "CVE-2004-0840",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately captures the mechanism and impact, though it slightly generalizes the affected components."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 10,
+                "rationale": "Highly accurate, concise, and correctly identifies both the specific components and the nature of the vulnerability."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 8,
+                "rationale": "Good summary, but slightly vague regarding the specific software versions affected."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 7,
+                "rationale": "Accurate, but includes unnecessary conversational filler and is less precise about the specific components involved."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 9,
+                "rationale": "Very close to the ground truth, though it misses the 64-bit specific distinction for Windows XP."
+            }
+        ]
+    },
+    "23": {
+        "cve_id": "CVE-2002-0012",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately captures the core mechanism and impact while maintaining a professional tone, though it omits the specific mention of the PROTOS test suite."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Provides a concise and accurate summary of the vulnerability mechanism and impact without unnecessary filler."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 9,
+                "rationale": "Effectively synthesizes the technical details and the note regarding the potential for future splitting of the vulnerability."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 8,
+                "rationale": "Accurate summary, but includes unnecessary conversational filler at the beginning which detracts from conciseness."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 10,
+                "rationale": "Provides the most comprehensive summary by including the specific test suite mentioned in the ground truth while remaining highly accurate."
+            }
+        ]
+    },
+    "24": {
+        "cve_id": "CVE-2003-1447",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately captures the mechanism and impact, though it is slightly wordier than necessary."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Provides a concise and accurate summary that hits all key points of the vulnerability."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 10,
+                "rationale": "Highly accurate, concise, and technically precise in its description of the encryption mechanism."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 9,
+                "rationale": "Very thorough and accurate, though slightly more verbose than the top-scoring model."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 9,
+                "rationale": "Effectively summarizes the vulnerability with good clarity and no hallucinations."
+            }
+        ]
+    },
+    "25": {
+        "cve_id": "CVE-2003-0041",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately identifies the command injection mechanism and impact, though it adds some generic context about lateral movement not explicitly in the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Very accurate and concise, though it includes conversational filler at the beginning which was unnecessary."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 7,
+                "rationale": "Accurate regarding the mechanism, but incorrectly implies the vulnerability is in the FTP site rather than the client."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 10,
+                "rationale": "Perfectly captures the mechanism and impact while remaining concise and strictly adhering to the ground truth."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 3,
+                "rationale": "Contains significant hallucinations, incorrectly claiming the vulnerability involves bypassing password authentication and targeting the remote site."
+            }
+        ]
+    },
+    "26": {
+        "cve_id": "CVE-2004-0788",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 8,
+                "rationale": "Accurately captures the mechanism and impact, though it slightly exaggerates the impact by suggesting a 'complete system crash' rather than just an application crash."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 10,
+                "rationale": "Provides a concise, accurate, and professional summary that perfectly aligns with the ground truth without any hallucinations."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 10,
+                "rationale": "Excellent summary that includes all specific version constraints and accurately describes the vulnerability mechanism and impact."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 5,
+                "rationale": "Includes a significant hallucination by suggesting the vulnerability may allow unauthorized access or arbitrary code execution, which is not supported by the ground truth."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 7,
+                "rationale": "Accurate regarding the technical details, but includes a hallucination regarding the discovery source (Hugging Face) which is not mentioned in the ground truth."
+            }
+        ]
+    },
+    "27": {
+        "cve_id": "CVE-2003-1351",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 10,
+                "rationale": "Accurately captures the mechanism, parameter, and impact without any hallucinations."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Provides a strong, accurate summary, though it omits the specific technical detail of the '%2F..' payload."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 7,
+                "rationale": "Accurate but lacks the specific context of the affected script and parameter, making it less actionable."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 8,
+                "rationale": "Accurate regarding the mechanism, but incorrectly speculates about potential code execution, which is a hallucination not supported by the ground truth."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 4,
+                "rationale": "Contains significant inaccuracies, including the incorrect claim that the vulnerability allows file modification and misidentifying the payload."
+            }
+        ]
+    },
+    "28": {
+        "cve_id": "CVE-2002-2259",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurate and concise summary that captures all key elements of the ground truth without adding hallucinations."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Very accurate, though it omits the specific mention of the 'French documentation patch' which is a key detail."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 7,
+                "rationale": "Accurate, but the inclusion of unnecessary filler text and a redundant summary section makes it less concise."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 9,
+                "rationale": "Highly accurate and captures all necessary details, though the conversational filler at the start is slightly unnecessary."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 4,
+                "rationale": "Hallucinates potential attack vectors like 'command injection' which were not present in the ground truth."
+            }
+        ]
+    },
+    "29": {
+        "cve_id": "CVE-2002-0507",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 8,
+                "rationale": "Accurately describes the bypass mechanism and impact, though it adds some descriptive fluff about the significance of the vulnerability."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Very concise and accurate, correctly identifying the mechanism of repeated password submission to bypass SecurID."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 6,
+                "rationale": "Incorrectly attributes the vulnerability to 'MS Office 365', which is a hallucination as the ground truth specifies OWA."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 10,
+                "rationale": "Provides a highly accurate and precise summary that mirrors the ground truth perfectly while maintaining professional tone."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 5,
+                "rationale": "The explanation is slightly confusing and misinterprets the mechanism, suggesting the user uses their own password rather than the previous user's."
+            }
+        ]
+    },
+    "30": {
+        "cve_id": "CVE-2002-2419",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 7,
+                "rationale": "Accurately describes the mechanism and impact, but incorrectly speculates about 'complete system failure or data loss' which is not supported by the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 10,
+                "rationale": "Highly accurate, concise, and avoids adding unverified claims or hallucinations."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 6,
+                "rationale": "Accurately identifies the DoS, but incorrectly suggests the vulnerability could lead to 'unauthorized access or control', which is a significant hallucination."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 8,
+                "rationale": "Good summary, but incorrectly labels the issue as a 'buffer overflow' when the ground truth only specifies a crash via a NULL byte."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 5,
+                "rationale": "Includes unnecessary technical details not in the ground truth and incorrectly claims it leads to 'data corruption'."
+            }
+        ]
+    },
+    "31": {
+        "cve_id": "CVE-2003-0456",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 6,
+                "rationale": "The model incorrectly identifies the vulnerability as a directory traversal attack, which is a hallucination not supported by the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Accurately describes the mechanism and impact, though it slightly overstates the risk by implying it could be used to locate files directly."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 9,
+                "rationale": "Provides a clear and accurate summary of the information disclosure mechanism without introducing significant hallucinations."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 9,
+                "rationale": "Very accurate summary that correctly identifies the issue as path disclosure and explains the mechanism clearly."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 8,
+                "rationale": "Very concise and accurate to the ground truth, though the final sentence about gaining unauthorized access is a slight speculative leap."
+            }
+        ]
+    },
+    "32": {
+        "cve_id": "CVE-2002-1432",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately identifies the root cause and impact, though it adds minor speculative examples of data types not explicitly in the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Provides a clear and accurate summary of the vulnerability mechanism and potential impact with professional phrasing."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 8,
+                "rationale": "Accurate, but slightly less precise than others by using more abstract language instead of explicitly mentioning the web document root."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 9,
+                "rationale": "Very strong summary that captures the mechanism and impact clearly, despite adding common examples of sensitive data."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 7,
+                "rationale": "The first sentence is a perfect reproduction of the ground truth, but the second sentence introduces unnecessary and slightly confusing filler."
+            }
+        ]
+    },
+    "33": {
+        "cve_id": "CVE-2003-1478",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately captures the mechanism and impact without introducing hallucinations."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 8,
+                "rationale": "Accurate summary, though the claim about disrupting access to files or applications is a slight overreach of the stated DoS impact."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 6,
+                "rationale": "Accurately describes the mechanism but incorrectly suggests the vulnerability could allow remote control, which is a significant hallucination."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 5,
+                "rationale": "Includes a dangerous hallucination by suggesting the vulnerability could allow arbitrary code execution, which is not supported by the ground truth."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 7,
+                "rationale": "Mostly accurate, but the phrasing 'sending a core dump' is technically incorrect as the core dump is the result of the crash, not the payload."
+            }
+        ]
+    },
+    "34": {
+        "cve_id": "CVE-2002-2303",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately captures the mechanism and impact without introducing significant hallucinations."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Provides a clear and accurate summary of the vulnerability and its potential business impact."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 9,
+                "rationale": "Concise and accurate description of the client-side manipulation flaw."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 10,
+                "rationale": "Perfectly captures the technical mechanism and the resulting impact as described in the ground truth."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 4,
+                "rationale": "Hallucinates that the vulnerability leads to unauthorized access to customer accounts or personal information, which is not supported by the ground truth."
+            }
+        ]
+    },
+    "35": {
+        "cve_id": "CVE-2001-0427",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 7,
+                "rationale": "Accurately identifies the DoS mechanism but misses the specific version constraint and the root cause regarding the failure to disconnect users."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Very accurate and concise, correctly identifying the services and the lack of proper disconnection as the root cause."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 8,
+                "rationale": "Good summary of the mechanism, though it omits the specific version information and the detail about the failure to disconnect."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 10,
+                "rationale": "The most complete summary, capturing the version constraint, the specific services, the mechanism, and the impact accurately."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 3,
+                "rationale": "Contains a significant hallucination by stating the system disconnects the user, which is the opposite of the actual vulnerability."
+            }
+        ]
+    },
+    "36": {
+        "cve_id": "CVE-2004-1417",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately captures the vulnerability and parameters, though it adds a slight assumption about unauthorized access that wasn't in the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Concise and accurate, correctly identifying the mechanism and potential impact without significant hallucination."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 7,
+                "rationale": "Accurate in its description of the mechanism, but fails to mention the specific affected software or file path."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 8,
+                "rationale": "Provides a good technical explanation, but omits the specific software name and version mentioned in the ground truth."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 5,
+                "rationale": "Hallucinates specific details like 'JavaScript alert box' and 'session cookie' which were not present in the ground truth."
+            }
+        ]
+    },
+    "37": {
+        "cve_id": "CVE-2003-1459",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 6,
+                "rationale": "The summary is accurate regarding impact but fails to mention the specific vulnerable parameters or files, missing key technical details."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "This summary is highly accurate, concise, and correctly identifies both the vulnerable parameters and the software versions."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 8,
+                "rationale": "It provides a good overview of the vulnerability but is slightly less precise than the ground truth by omitting the specific parameter names."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 10,
+                "rationale": "This is the most complete and accurate summary, capturing all technical details including file names, parameters, and software versions."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 7,
+                "rationale": "It captures the core mechanism well but contains a slight inaccuracy by implying the entire install.php file is the parameter rather than the installdir parameter."
+            }
+        ]
+    },
+    "38": {
+        "cve_id": "CVE-2002-2323",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 8,
+                "rationale": "Accurately captures the mechanism and impact, though it introduces a slight hallucination by explicitly mentioning 'elevated privileges' which is not in the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Very accurate and concise, though it includes unnecessary conversational filler at the beginning."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 7,
+                "rationale": "Accurate, but uses the term 'file system traversal' which is a specific technical interpretation not explicitly stated in the ground truth."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 8,
+                "rationale": "Comprehensive and accurate, though it adds potential impacts like 'data modification' and 'data breaches' that were not explicitly mentioned in the source."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 9,
+                "rationale": "Very accurate and sticks closely to the provided ground truth without adding unnecessary speculation."
+            }
+        ]
+    },
+    "39": {
+        "cve_id": "CVE-2003-1240",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately identifies the RFI mechanism and impact, though it is slightly verbose."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Concise and accurate, though it omits the specific filenames mentioned in the ground truth."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 6,
+                "rationale": "Incorrectly classifies the vulnerability as an insecure direct object reference (IDOR) instead of RFI, which is a significant technical hallucination."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 8,
+                "rationale": "Accurate summary, but includes unnecessary conversational filler and lacks the specific filenames."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 10,
+                "rationale": "Highly accurate and concise, capturing both the mechanism, the specific parameter, and the affected files without hallucination."
+            }
+        ]
+    },
+    "40": {
+        "cve_id": "CVE-2002-2196",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately identifies the buffer overflow and the specific data structure, though it misses the version constraint."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 7,
+                "rationale": "Incorrectly identifies the root cause as a failure to 'deallocate' rather than a failure to 'terminate' the data structure."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 6,
+                "rationale": "Vague description of the mechanism as an 'uncontrolled termination error' rather than a specific buffer overflow in the data structure."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 8,
+                "rationale": "Accurate summary of the impact and mechanism, though it incorrectly labels the data structure as a 'function'."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 10,
+                "rationale": "Highly accurate and concise, correctly identifying the version, the specific data structure, and the impact without hallucinations."
+            }
+        ]
+    },
+    "41": {
+        "cve_id": "CVE-2004-0455",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 8,
+                "rationale": "Accurately captures the mechanism and impact, though it omits the specific version constraint mentioned in the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Provides a concise and accurate summary that includes the file, the mechanism, and the impact, though it misses the version number."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 6,
+                "rationale": "Includes the correct version but incorrectly suggests the vulnerability applies to unauthenticated users, contradicting the 'local users' constraint."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 7,
+                "rationale": "Accurate in its description but includes unnecessary conversational filler and misses the version constraint."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 10,
+                "rationale": "Perfectly captures all key elements of the ground truth, including the specific file, version, and local user constraint without hallucinations."
+            }
+        ]
+    },
+    "42": {
+        "cve_id": "CVE-2003-1432",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 8,
+                "rationale": "Accurately summarizes the mechanism and impact, though it adds a slight hallucination regarding elevated privileges which was not in the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 10,
+                "rationale": "Provides a highly accurate, concise, and professional summary that captures all technical details without adding external assumptions."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 9,
+                "rationale": "Very accurate and concise, though it omits the specific detail about the negative size being treated as a large positive number."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 6,
+                "rationale": "Includes unnecessary conversational filler and incorrectly labels the mechanism as a 'buffer overflow' rather than an integer handling/allocation issue."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 9,
+                "rationale": "Very accurate to the ground truth, though the sentence structure is slightly clunky due to the direct inclusion of the technical description."
+            }
+        ]
+    },
+    "43": {
+        "cve_id": "CVE-2003-1414",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 8,
+                "rationale": "Accurately describes the mechanism and impact but fails to mention the specific trigger (triple dot) or the affected software versions."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 8,
+                "rationale": "Provides a clear and professional summary of the vulnerability type and impact, though it omits the specific technical trigger (triple dot)."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 9,
+                "rationale": "Concise and accurate, correctly identifying the specific trigger mechanism and the affected software."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 10,
+                "rationale": "Provides the most comprehensive and accurate summary, including the specific file, software versions, trigger mechanism, and impact."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 4,
+                "rationale": "Contains a significant hallucination by misidentifying the trigger as a 'triple slash' instead of the 'triple dot' specified in the ground truth."
+            }
+        ]
+    },
+    "44": {
+        "cve_id": "CVE-2002-2369",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately describes the mechanism and impact without introducing hallucinations."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 10,
+                "rationale": "Concise, accurate, and perfectly captures the mechanism and impact described in the ground truth."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 6,
+                "rationale": "Incorrectly identifies the mechanism as a double-dot sequence ('../') instead of the specified leading '/./'."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 9,
+                "rationale": "Accurately identifies the mechanism and impact, though it adds a slight amount of speculation regarding privilege escalation."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 1,
+                "rationale": "Contains severe hallucinations by incorrectly attributing the vulnerability to SQL injection and XSS."
+            }
+        ]
+    },
+    "45": {
+        "cve_id": "CVE-2003-1515",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 3,
+                "rationale": "The model incorrectly identifies the vulnerability as Remote Code Execution (RCE), which is a significant hallucination not present in the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 10,
+                "rationale": "The summary is accurate, concise, and correctly identifies the mechanism (unauthenticated access) and the impact (DoS via factory reset) without any hallucinations."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 8,
+                "rationale": "The summary is accurate, though it slightly overstates the risk by mentioning 'unauthorized access' which is not explicitly stated as the primary impact in the ground truth."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 9,
+                "rationale": "The summary is highly accurate and captures all key details, though it is slightly more verbose than necessary."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 9,
+                "rationale": "The summary is very accurate and concise, though it slightly misinterprets the mechanism by suggesting the DoS is caused by restoring configuration files rather than the reset itself."
+            }
+        ]
+    },
+    "46": {
+        "cve_id": "CVE-2002-2154",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately describes the mechanism and impact, though it omits the specific version number mentioned in the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 10,
+                "rationale": "Provides a precise, accurate, and concise summary that includes all critical details from the ground truth without any hallucinations."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 7,
+                "rationale": "Accurate but lacks the specific context of the affected software and version, making it less useful as a vulnerability summary."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 9,
+                "rationale": "Very accurate and detailed, though it slightly oversteps by mentioning potential file modification, which is not explicitly stated in the ground truth."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 2,
+                "rationale": "Contains significant hallucinations, including a false attribution to Hugging Face and incorrect claims about authentication bypass and file deletion."
+            }
+        ]
+    },
+    "47": {
+        "cve_id": "CVE-2004-1419",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately identifies the vulnerability type, affected parameters, and potential impact without introducing hallucinations."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 10,
+                "rationale": "Provides a precise, accurate, and concise summary that includes the specific version and technical mechanism."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 8,
+                "rationale": "Accurate but slightly vague by omitting the specific parameter names mentioned in the ground truth."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 8,
+                "rationale": "Good summary, but includes unnecessary conversational filler and omits the specific parameter names."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 3,
+                "rationale": "Contains significant hallucinations regarding the file names and function calls, misrepresenting the technical details."
+            }
+        ]
+    },
+    "48": {
+        "cve_id": "CVE-2003-1472",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurate and concise, though it adds a minor speculative mention of unauthorized data access not explicitly in the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 10,
+                "rationale": "Highly accurate, concise, and strictly adheres to the ground truth without adding unnecessary speculation."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 8,
+                "rationale": "Accurate, but slightly wordy and introduces terminology like 'security breaches' and 'injection' that were not in the original description."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 8,
+                "rationale": "Good summary, but includes conversational filler and adds speculative impact (data theft) not present in the ground truth."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 5,
+                "rationale": "Accurate on the core vulnerability, but hallucinates that the issue is triggered by a 'large file' rather than a 'long banner'."
+            }
+        ]
+    },
+    "49": {
+        "cve_id": "CVE-2002-1820",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately describes the case sensitivity issue and the resulting impact, though it omits the specific version numbers."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 8,
+                "rationale": "Provides a clear explanation of the mechanism and impact but fails to mention the specific affected software versions."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 8,
+                "rationale": "Concise and accurate regarding the mechanism, but lacks the specific version context provided in the ground truth."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 10,
+                "rationale": "Perfectly captures the mechanism, impact, and includes all relevant version information from the ground truth."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 4,
+                "rationale": "The explanation is confusing and contains a hallucination regarding database access that is not present in the ground truth."
+            }
+        ]
+    },
+    "50": {
+        "cve_id": "CVE-2003-1151",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately captures the mechanism and impact, though it adds some speculative impact details not explicitly in the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Very accurate summary that correctly identifies the version, mechanism, and potential impact."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 7,
+                "rationale": "Concise and accurate, but omits the specific product name and version, which are critical for a vulnerability summary."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 8,
+                "rationale": "Accurate and comprehensive, though slightly verbose and includes conversational filler."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 6,
+                "rationale": "Captures the core facts but phrases the mechanism slightly awkwardly, implying the error page is accessed by users with malicious intent rather than the attacker injecting the script."
+            }
+        ]
+    },
+    "51": {
+        "cve_id": "CVE-2003-1541",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 6,
+                "rationale": "The model incorrectly identifies the vulnerability as Remote Code Execution (RCE), which is a significant hallucination not supported by the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 10,
+                "rationale": "The summary is accurate, concise, and correctly identifies the mechanism and impact without introducing any hallucinations."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 9,
+                "rationale": "The summary is highly accurate and descriptive, though slightly wordier than necessary."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 10,
+                "rationale": "The summary perfectly captures all technical details from the ground truth with high clarity and accuracy."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 9,
+                "rationale": "The summary is very concise and accurate, though it omits the specific version number mentioned in the ground truth."
+            }
+        ]
+    },
+    "52": {
+        "cve_id": "CVE-2004-0123",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately captures the mechanism and impact, though it is slightly wordier than necessary."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 10,
+                "rationale": "Highly concise and accurate, capturing all critical elements of the ground truth without any fluff."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 9,
+                "rationale": "Accurate and clear, though it uses slightly informal phrasing regarding the list of affected systems."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 8,
+                "rationale": "Accurate, but includes speculative consequences like 'data theft' that were not explicitly mentioned in the ground truth."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 4,
+                "rationale": "Hallucinates a 'buffer overflow protection mechanism' bypass which is not present in the ground truth description."
+            }
+        ]
+    },
+    "53": {
+        "cve_id": "CVE-2003-1393",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 8,
+                "rationale": "Accurate and concise, though it adds a slight assumption about privilege escalation not explicitly mentioned in the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 10,
+                "rationale": "Perfectly captures the mechanism and impact while remaining concise and free of hallucinations."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 7,
+                "rationale": "Accurate, but misses the specific mention of the 'long' command constraint and adds generic impact consequences not in the source."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 9,
+                "rationale": "Very accurate and clear, though slightly verbose due to the conversational filler at the beginning."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 4,
+                "rationale": "Contains a logical error by stating the DoS is caused by executing arbitrary code, rather than the buffer overflow itself."
+            }
+        ]
+    },
+    "54": {
+        "cve_id": "CVE-2004-1926",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 8,
+                "rationale": "Accurately identifies the mechanism and impact, though it omits the specific version information provided in the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 8,
+                "rationale": "Concise and accurate regarding the mechanism, but fails to mention the specific affected versions."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 10,
+                "rationale": "Provides a highly accurate summary that includes the specific version range and correctly identifies the injection mechanism."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 9,
+                "rationale": "Very accurate and professional, though it misses the specific version number constraint."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 5,
+                "rationale": "Includes a hallucination regarding command-and-control (C2) communication which is not supported by the ground truth."
+            }
+        ]
+    },
+    "55": {
+        "cve_id": "CVE-2004-0184",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 8,
+                "rationale": "Accurately captures the mechanism and impact, though it adds a subjective assessment of 'high potential impact' not explicitly in the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Provides a very clear and accurate summary of the mechanism and impact without introducing hallucinations."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 6,
+                "rationale": "Incorrectly identifies the mechanism as a 'buffer overflow' instead of an 'out-of-bounds read', which is a technical inaccuracy."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 9,
+                "rationale": "Highly accurate and professional summary that captures all technical details correctly."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 7,
+                "rationale": "Accurate regarding the mechanism, but the phrasing 'when the packet is sent over TCPDUMP' is slightly awkward and technically imprecise."
+            }
+        ]
+    },
+    "56": {
+        "cve_id": "CVE-2003-1468",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 2,
+                "rationale": "The model hallucinates a remote code execution (RCE) vulnerability, which is a severe misrepresentation of the actual information disclosure flaw."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 8,
+                "rationale": "Accurately identifies the path disclosure mechanism, though it slightly overstates the impact by suggesting it leads to unauthorized access to sensitive files."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 7,
+                "rationale": "Correctly identifies the information disclosure nature of the flaw, though it is slightly vague regarding the specific mechanism of the 'cid' parameter."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 9,
+                "rationale": "Provides a very accurate and professional summary that correctly identifies the mechanism and the potential for further exploitation."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 10,
+                "rationale": "This is the most accurate summary, as it precisely describes the mechanism (invalid/null cid parameter) and the resulting impact without any hallucinations."
+            }
+        ]
+    },
+    "57": {
+        "cve_id": "CVE-2002-2375",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately summarizes the mechanism and impact while correctly noting the ambiguity regarding the severity mentioned in the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 7,
+                "rationale": "Provides a good summary but slightly overstates the impact by suggesting it could lead to 'further exploitation' beyond what was specified."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 6,
+                "rationale": "Includes hallucinations by claiming it leads to 'unauthorized disclosure of confidential data' and 'significant' impact, which contradicts the ground truth's note on limited severity."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 8,
+                "rationale": "Very accurate to the ground truth, though it slightly overstates the risk by suggesting 'unauthorized access to sensitive files' which was not explicitly confirmed."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 10,
+                "rationale": "Highly concise and perfectly captures the core mechanism and the specific nuance regarding the limited impact mentioned in the ground truth."
+            }
+        ]
+    },
+    "58": {
+        "cve_id": "CVE-2004-0836",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 7,
+                "rationale": "Accurately identifies the function and impact but fails to mention the specific vector (malicious DNS server) which is critical to the vulnerability."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Accurately captures the mechanism, the specific vector (DNS server), and the impact, though it omits the specific version numbers."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 10,
+                "rationale": "Provides a comprehensive and accurate summary including the function, impact, and specific affected versions."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 9,
+                "rationale": "Very accurate and concise, though it slightly misses the detail about the 'large address length' as the specific trigger."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 6,
+                "rationale": "Captures the details but is poorly phrased and repetitive, making it less professional and harder to read."
+            }
+        ]
+    },
+    "59": {
+        "cve_id": "CVE-2002-0061",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 7,
+                "rationale": "Accurate summary of the mechanism, but fails to mention the specific affected version ranges provided in the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 7,
+                "rationale": "Good summary of the mechanism, but omits the specific version numbers and implies the vulnerability is in the scripts rather than the server handling them."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 9,
+                "rationale": "Very accurate and concise, correctly identifying the version ranges and the core mechanism of unsanitized input."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 7,
+                "rationale": "Clear explanation of the mechanism, but includes unnecessary conversational filler and omits the specific version numbers."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 10,
+                "rationale": "Perfectly captures the technical details, version ranges, and mechanism from the ground truth without any hallucinations."
+            }
+        ]
+    },
+    "60": {
+        "cve_id": "CVE-2002-2384",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 10,
+                "rationale": "Accurately captures the specific software, the mechanism of cleartext storage in the registry, and the resulting impact."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 10,
+                "rationale": "Provides a precise and professional summary that covers all key aspects of the vulnerability without unnecessary fluff."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 7,
+                "rationale": "Accurate but lacks specific details regarding the registry key location and the specific impact of phone service theft."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 8,
+                "rationale": "Accurate and comprehensive, though it adds some speculative impact details not explicitly mentioned in the ground truth."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 6,
+                "rationale": "Correctly identifies the core issue but contains redundant phrasing regarding the registry key and incorrectly suggests the vulnerability is about 'intercepting' rather than 'storing'."
+            }
+        ]
+    },
+    "61": {
+        "cve_id": "CVE-2002-2411",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately captures the mechanism and impact while remaining concise and professional."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Provides a very clear and accurate summary of the vulnerability and its potential consequences."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 8,
+                "rationale": "Accurate, though it refers to 'rcmd' as a function rather than a command, which is a minor technical inaccuracy."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 9,
+                "rationale": "Very precise and accurate, though slightly more verbose than necessary."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 5,
+                "rationale": "Invents a non-existent vulnerability name ('BadMinCdllBufOverflow') and is vague about the mechanism."
+            }
+        ]
+    },
+    "62": {
+        "cve_id": "CVE-1999-0877",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 6,
+                "rationale": "The model incorrectly claims the vulnerability allows for arbitrary command execution, which is a significant hallucination beyond the ground truth of file reading."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 7,
+                "rationale": "While accurate regarding file access, it incorrectly suggests the potential for arbitrary code execution, which is not supported by the ground truth."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 10,
+                "rationale": "This summary is highly accurate, concise, and avoids hallucinating additional impacts beyond the ground truth."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 9,
+                "rationale": "Very accurate and captures the mechanism well, though slightly more verbose than necessary."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 9,
+                "rationale": "Provides a clear and accurate summary of the vulnerability mechanism and impact without adding extraneous information."
+            }
+        ]
+    },
+    "63": {
+        "cve_id": "CVE-2003-0132",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 8,
+                "rationale": "Accurate and concise, though it omits the specific version range (2.0.44) mentioned in the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Very accurate and captures all critical details, including the specific version range and the mechanism of the vulnerability."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 8,
+                "rationale": "Provides a good summary of the impact and mechanism, but fails to specify the exact version range provided in the ground truth."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 9,
+                "rationale": "Highly accurate and includes all necessary technical details, though the inclusion of conversational filler text slightly reduces conciseness."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 9,
+                "rationale": "Excellent summary that includes the specific technical detail of the 80-byte allocation, though it misses the upper bound of the version range."
+            }
+        ]
+    },
+    "64": {
+        "cve_id": "CVE-2002-2341",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 7,
+                "rationale": "Accurate, but includes speculative impact claims about executing unauthorized code on the system which is not inherent to a standard reflected XSS vulnerability."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Concise and accurate, correctly identifying the mechanism and potential impact without significant hallucination."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 8,
+                "rationale": "Very concise, though it omits the specific product and version details provided in the ground truth."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 8,
+                "rationale": "Accurate and comprehensive, though it includes conversational filler and slightly overstates the impact regarding arbitrary code execution on the system."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 6,
+                "rationale": "Captures the essence but is slightly vague by stating it injects code into 'websites' rather than the specific blocked URL mechanism."
+            }
+        ]
+    },
+    "65": {
+        "cve_id": "CVE-2003-1558",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately captures all technical details and impacts while remaining concise and professional."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Provides a very clear and accurate summary that includes all necessary technical context from the ground truth."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 7,
+                "rationale": "Accurate, but omits the specific file name (httpd.c) and version (1.6) mentioned in the ground truth."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 8,
+                "rationale": "Accurate and complete, but includes unnecessary conversational filler at the beginning."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 10,
+                "rationale": "Extremely concise and perfectly captures all technical components of the vulnerability without any fluff."
+            }
+        ]
+    },
+    "66": {
+        "cve_id": "CVE-2002-2288",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 3,
+                "rationale": "The model incorrectly identifies the vulnerability as Remote Code Execution (RCE), which is a severe hallucination."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "The summary is accurate, concise, and correctly identifies the mechanism and potential impact without hallucinating."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 8,
+                "rationale": "The summary is accurate and professional, though it slightly overstates the impact by suggesting it leads directly to data theft."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 10,
+                "rationale": "This summary is perfectly accurate, concise, and correctly characterizes the vulnerability as a path disclosure issue."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 8,
+                "rationale": "The summary is accurate and captures the core mechanism well, though the phrasing is slightly repetitive."
+            }
+        ]
+    },
+    "67": {
+        "cve_id": "CVE-1999-0909",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 7,
+                "rationale": "Accurately identifies the system and vulnerability name but is slightly vague on the specific mechanism of IP options."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 8,
+                "rationale": "Provides a clear and accurate summary, though it includes conversational filler at the beginning."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 8,
+                "rationale": "Strong technical summary that correctly identifies the mechanism and potential impact without unnecessary fluff."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 9,
+                "rationale": "Highly accurate and concise, correctly identifying the bypass of IP source routing restrictions via malformed IP options."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 5,
+                "rationale": "Hallucinates that the vulnerability is about spoofing IP addresses in the header rather than the specific IP source routing bypass mechanism."
+            }
+        ]
+    },
+    "68": {
+        "cve_id": "CVE-2003-0356",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 8,
+                "rationale": "Accurate and concise, though it omits the specific version range and the technical detail regarding the improper function usage."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Very accurate and captures the core mechanism and impact well, though it could have been slightly more comprehensive regarding the specific function names."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 7,
+                "rationale": "Good summary, but it adds speculative impact consequences like 'data breaches' which were not mentioned in the ground truth."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 7,
+                "rationale": "Accurate, but it hallucinates that the vulnerability leads to 'code execution with elevated privileges,' which is not stated in the ground truth."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 8,
+                "rationale": "Highly accurate in listing the affected dissectors, but it fails to mention the potential for arbitrary code execution, focusing only on DoS."
+            }
+        ]
+    },
+    "69": {
+        "cve_id": "CVE-2003-1470",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 10,
+                "rationale": "Accurately captures all technical details and the impact without introducing hallucinations."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 10,
+                "rationale": "Provides a precise and accurate summary of the vulnerability mechanism and potential impact."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 8,
+                "rationale": "Accurate in description, but incorrectly states the affected version as 6.7.4 instead of 6.7.5."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 9,
+                "rationale": "Highly accurate, though the inclusion of conversational filler text slightly reduces conciseness."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 4,
+                "rationale": "Contains a significant hallucination by attributing the discovery of the vulnerability to Hugging Face."
+            }
+        ]
+    },
+    "70": {
+        "cve_id": "CVE-2004-1924",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately summarizes the vulnerability and scope, though it includes some generic impact speculation not explicitly in the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 8,
+                "rationale": "Good summary of the mechanism, but adds specific impact examples like 'account takeover' that were not mentioned in the ground truth."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 8,
+                "rationale": "Concise and accurate regarding the mechanism, though it adds potential impacts not explicitly listed in the source text."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 9,
+                "rationale": "Very accurate and professional summary that captures the essence of the vulnerability without over-specifying or hallucinating."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 4,
+                "rationale": "Fails to capture the 'multiple' nature of the vulnerability, focusing only on one of the twelve listed parameters."
+            }
+        ]
+    },
+    "71": {
+        "cve_id": "CVE-2002-2387",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 8,
+                "rationale": "Accurate and professional, though it omits the specific 'LS' command trigger mentioned in the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Very accurate and concise, correctly identifying the version, mechanism, and potential impact."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 8,
+                "rationale": "Good summary, but lacks the specific version context and the 'LS' command trigger."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 10,
+                "rationale": "Perfectly captures all technical details including the version, the specific command trigger, and the mechanism."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 7,
+                "rationale": "Accurate but slightly verbose and misses the specific 'LS' command trigger."
+            }
+        ]
+    },
+    "72": {
+        "cve_id": "CVE-1999-0728",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 6,
+                "rationale": "Accurately identifies the impact but incorrectly assumes the attack is remote, whereas the ground truth implies local user access."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 6,
+                "rationale": "Correctly identifies the mechanism but incorrectly assumes the attack is remote, which is not supported by the ground truth."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 2,
+                "rationale": "Contains significant hallucinations by claiming arbitrary code execution and full system compromise, which are not present in the ground truth."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 9,
+                "rationale": "Accurately captures the mechanism and impact while correctly identifying that the actor is an authenticated local user."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 7,
+                "rationale": "Accurately reflects the mechanism but adds speculative impact regarding unauthorized access to sensitive data that is not explicitly stated."
+            }
+        ]
+    },
+    "73": {
+        "cve_id": "CVE-1999-0491",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 4,
+                "rationale": "The summary incorrectly identifies the vulnerability as Directory Traversal or Command Injection, failing to capture the specific mechanism of prompt parsing."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 5,
+                "rationale": "It correctly identifies the mechanism of crafting a directory name but incorrectly labels the vulnerability as a race condition."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 6,
+                "rationale": "It provides a decent high-level overview but lacks the specific technical detail regarding the directory-based mechanism mentioned in the ground truth."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 8,
+                "rationale": "It accurately captures the mechanism of prompt parsing and directory creation, though it incorrectly labels it as a path traversal flaw."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 9,
+                "rationale": "This is the most accurate summary as it concisely describes the specific mechanism of directory naming without introducing incorrect technical labels or hallucinations."
+            }
+        ]
+    },
+    "74": {
+        "cve_id": "CVE-2003-1402",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 10,
+                "rationale": "Accurately identifies the RFI mechanism, the specific file and parameter, and correctly assesses the impact without introducing hallucinations."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 8,
+                "rationale": "Accurate regarding the vulnerability type and impact, but incorrectly describes the mechanism as 'uploading' code rather than including a remote file."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 5,
+                "rationale": "Incorrectly classifies the vulnerability as an 'insecure direct object reference' (IDOR) instead of remote file inclusion."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 10,
+                "rationale": "Provides a precise, accurate, and concise summary that perfectly aligns with the ground truth."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 9,
+                "rationale": "Accurately captures the core vulnerability, though it adds a minor assumption about the parameter being used as an argument to a function."
+            }
+        ]
+    },
+    "75": {
+        "cve_id": "CVE-2000-1178",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 8,
+                "rationale": "Accurately identifies the mechanism and impact, though it incorrectly implies the existence of a 'DEADJOE' directory rather than a file."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 7,
+                "rationale": "Captures the core issue well, but includes unnecessary conversational filler and slightly misinterprets the scope as 'the same Joe session'."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 7,
+                "rationale": "Accurate regarding the mechanism, but introduces potential hallucinations like 'privilege escalation' which are not supported by the ground truth."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 10,
+                "rationale": "Provides a concise, accurate, and hallucination-free summary that perfectly aligns with the ground truth description."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 3,
+                "rationale": "Contains significant hallucinations regarding 'password-protected files' and 'malicious content' that are not present in the ground truth."
+            }
+        ]
+    },
+    "76": {
+        "cve_id": "CVE-2003-1359",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 10,
+                "rationale": "This summary is highly accurate, concise, and avoids adding speculative details not present in the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 8,
+                "rationale": "The summary is accurate but introduces the assumption of 'arbitrary code execution' and 'complete system compromise' which were not explicitly stated in the ground truth."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 8,
+                "rationale": "The summary is technically sound but slightly wordy and introduces the assumption of 'arbitrary code execution' not found in the source."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 7,
+                "rationale": "While clear, it hallucinates specific outcomes like 'data theft' and 'root user' which were not mentioned in the ground truth."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 4,
+                "rationale": "The summary contains a significant hallucination regarding an 'uninitialized input parameter' and incorrectly implies the vulnerability only affects two specific versions rather than the range."
+            }
+        ]
+    },
+    "77": {
+        "cve_id": "CVE-2003-0395",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately captures the mechanism and impact, though it omits the specific trigger file mentioned in the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 10,
+                "rationale": "Provides a highly accurate and concise summary that includes both the specific injection vector and the trigger script."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 7,
+                "rationale": "Accurate but overly brief, missing the specific context of the User-Agent header and the trigger script."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 9,
+                "rationale": "Very accurate and well-written, though it includes conversational filler and misses the specific trigger file name."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 6,
+                "rationale": "Vague description of the mechanism that fails to mention the User-Agent header, which is the core of the vulnerability."
+            }
+        ]
+    },
+    "78": {
+        "cve_id": "CVE-2002-2311",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 7,
+                "rationale": "Accurately describes the mechanism but hallucinates the specific impact of code execution which was not mentioned in the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 7,
+                "rationale": "Captures the mechanism well but assumes a 'complete system compromise' impact that is not explicitly stated in the ground truth."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 6,
+                "rationale": "Correctly notes the disputed severity but incorrectly identifies the mechanism as arbitrary code execution rather than arbitrary file upload."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 5,
+                "rationale": "Too vague; it fails to mention the specific browser version or the key-press mechanism required for the vulnerability."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 4,
+                "rationale": "Misinterprets the technical details by suggesting the vulnerability involves clicking buttons with '1' or '2' events."
+            }
+        ]
+    },
+    "79": {
+        "cve_id": "CVE-2002-2233",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 8,
+                "rationale": "Accurately captures the mechanism and impact, though it omits the specific product name and version."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Provides a clear, accurate summary including the product name and version, though it slightly generalizes the impact."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 7,
+                "rationale": "Accurate but lacks specific details regarding the product name and version, making it less useful as a standalone summary."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 9,
+                "rationale": "Excellent summary that covers all key aspects including product, version, mechanism, and impact in a concise manner."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 10,
+                "rationale": "Highly accurate and concise, including the specific examples provided in the ground truth which adds significant technical value."
+            }
+        ]
+    },
+    "80": {
+        "cve_id": "CVE-2004-0183",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurate and concise, though it omits the specific mention of the 'Delete payload' which is a key part of the trigger mechanism."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 10,
+                "rationale": "Perfectly captures the version, the specific trigger (ISAKMP/Delete payload/SPIs), the mechanism (out-of-bounds read), and the impact (DoS)."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 9,
+                "rationale": "Very accurate, though the phrasing regarding the Striker test suite is slightly clunky compared to the ground truth."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 8,
+                "rationale": "Accurate, but includes unnecessary conversational filler and slightly hallucinates by suggesting it compromises the security of connected devices beyond the DoS."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 9,
+                "rationale": "Very concise and accurate, though it misses the specific detail that the vulnerability is triggered by the Delete payload specifically."
+            }
+        ]
+    },
+    "81": {
+        "cve_id": "CVE-2003-0801",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately captures the mechanism and impact, though it includes some conversational filler."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 8,
+                "rationale": "Accurate summary, but it omits the specific 'docs/' directory context mentioned in the ground truth."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 9,
+                "rationale": "Very concise and accurate, effectively summarizing the mechanism and impact without unnecessary fluff."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 8,
+                "rationale": "Accurate and well-written, though it introduces the word 'unpatched' which was not in the ground truth."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 10,
+                "rationale": "Highly accurate, concise, and strictly adheres to the provided ground truth details without adding hallucinations."
+            }
+        ]
+    },
+    "82": {
+        "cve_id": "CVE-2004-0119",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 8,
+                "rationale": "Accurately captures the mechanism and impact, though it omits the specific Windows versions mentioned in the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Very accurate and concise, correctly identifying the null dereference mechanism and the specific request type."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 6,
+                "rationale": "Introduces a hallucination by incorrectly attributing the vulnerability specifically to Kerberos rather than the general Negotiate SSP interface."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 9,
+                "rationale": "Highly accurate and comprehensive, though slightly verbose due to the conversational filler at the beginning."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 10,
+                "rationale": "Perfectly replicates the ground truth while adding a logical, non-hallucinated assessment of the potential security impact."
+            }
+        ]
+    },
+    "83": {
+        "cve_id": "CVE-2002-1873",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately captures the mechanism and impact, though it adds a slight assumption about data loss not explicitly in the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 10,
+                "rationale": "Highly accurate, concise, and strictly adheres to the provided ground truth without adding unnecessary speculation."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 8,
+                "rationale": "Accurate, but slightly verbose and introduces technical assumptions about 'improper handling and validation' not explicitly stated in the source."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 8,
+                "rationale": "Good summary, but incorrectly labels the vulnerability as 'unauthenticated' which is not mentioned in the ground truth."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 7,
+                "rationale": "Captures the core issue but is phrased somewhat awkwardly and is less professional than the other summaries."
+            }
+        ]
+    },
+    "84": {
+        "cve_id": "CVE-2002-2365",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately identifies the command injection mechanism and potential impact without introducing hallucinations."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 10,
+                "rationale": "Provides a precise, concise, and accurate summary that perfectly aligns with the ground truth."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 4,
+                "rationale": "Contains significant hallucinations, specifically mentioning Windows systems and access rights, which are not present in the ground truth."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 9,
+                "rationale": "Very accurate and comprehensive, though slightly less concise due to the conversational filler at the beginning."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 8,
+                "rationale": "Accurately captures the core vulnerability, though it assumes the context of a 'web application' which is not explicitly stated in the ground truth."
+            }
+        ]
+    },
+    "85": {
+        "cve_id": "CVE-2000-0155",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 7,
+                "rationale": "Accurately describes the mechanism but incorrectly identifies the media type as removable instead of non-removable."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 7,
+                "rationale": "Provides a clear summary but incorrectly assumes the vulnerability involves removable media rather than the specified non-removable media."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 6,
+                "rationale": "Fails to address the core issue of non-removable media and instead focuses on removable drives, contradicting the ground truth."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 7,
+                "rationale": "Captures the mechanism well but incorrectly identifies the media as removable, missing the specific context of the ground truth."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 5,
+                "rationale": "While it correctly identifies non-removable media, the explanation of bypassing file system permissions is inaccurate and hallucinates the mechanism."
+            }
+        ]
+    },
+    "86": {
+        "cve_id": "CVE-2002-2094",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 8,
+                "rationale": "Accurately summarizes the mechanism and impact, though it adds a slight speculation about privilege escalation not present in the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 7,
+                "rationale": "Provides a good high-level summary but lacks the specific technical detail regarding the 403 error mechanism described in the ground truth."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 6,
+                "rationale": "Vague regarding the specific mechanism and incorrectly characterizes the issue as a bypass of server-side restrictions rather than path disclosure."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 9,
+                "rationale": "Very accurate and detailed, though it includes some conversational filler and minor speculation about the impact."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 10,
+                "rationale": "Perfectly captures the technical mechanism and impact without any hallucinations or unnecessary additions."
+            }
+        ]
+    },
+    "87": {
+        "cve_id": "CVE-2003-0373",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 8,
+                "rationale": "Accurately captures the mechanism and impact, though it omits the specific function names mentioned in the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 10,
+                "rationale": "Provides a precise, accurate summary that includes the specific vulnerable functions and the version constraint."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 8,
+                "rationale": "Good summary of the mechanism and impact, but lacks the specific function names and version details."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 9,
+                "rationale": "Very concise and accurate, though it misses the specific function names provided in the ground truth."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 6,
+                "rationale": "The summary is repetitive and slightly disjointed, though it correctly identifies the core vulnerability and impact."
+            }
+        ]
+    },
+    "88": {
+        "cve_id": "CVE-2002-0053",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 8,
+                "rationale": "Accurate summary, though it adds a slight editorialization about the 'significant potential impact' which was not explicitly in the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 8,
+                "rationale": "Concise and accurate, though it uses 'older Windows operating systems' instead of listing the specific versions provided in the ground truth."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 8,
+                "rationale": "Good summary of the mechanism and impact, but generalizes the operating systems rather than listing them."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 8,
+                "rationale": "Accurate and clear, though it includes some redundant phrasing about unauthorized access that wasn't explicitly stated in the ground truth."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 10,
+                "rationale": "Highly accurate and concise, perfectly capturing the mechanism, impact, and specific affected operating systems without any hallucinations."
+            }
+        ]
+    },
+    "89": {
+        "cve_id": "CVE-1999-0159",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 7,
+                "rationale": "Accurately describes the mechanism and impact but fails to mention the specific affected version ranges provided in the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Provides a concise and accurate summary that includes both the mechanism, impact, and the specific affected software versions."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 9,
+                "rationale": "Very accurate and concise, correctly identifying the requirement for interactive prompt access and the specific version range."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 9,
+                "rationale": "Excellent summary that captures all key elements of the ground truth including the specific version numbers and the DoS impact."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 3,
+                "rationale": "Hallucinates a 'lack of authentication' requirement which is not present in the ground truth and omits the version information."
+            }
+        ]
+    },
+    "90": {
+        "cve_id": "CVE-2002-2363",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately captures the mechanism and impact, though it slightly over-explains the potential consequences beyond the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 8,
+                "rationale": "Accurate, but incorrectly identifies the path as '/etc/PATH' instead of the directory 'bin' being added to the PATH variable."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 9,
+                "rationale": "Very concise and accurate, though it omits the specific name of the utility involved."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 10,
+                "rationale": "Provides the most precise and accurate summary, correctly identifying the utility, the mechanism, and the impact."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 6,
+                "rationale": "Misinterprets the mechanism by suggesting 'bin' is a single binary file rather than a directory being added to the PATH."
+            }
+        ]
+    },
+    "91": {
+        "cve_id": "CVE-2003-0218",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately captures the mechanism and impact, though it adds a slight amount of fluff regarding potential consequences."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Very accurate and concise, though it includes denial of service as a potential impact which was not explicitly in the ground truth."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 9,
+                "rationale": "Provides a clear and accurate summary of the vulnerability mechanism and potential impact."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 10,
+                "rationale": "Highly accurate and adheres strictly to the provided ground truth without adding unnecessary speculation."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 6,
+                "rationale": "Accurate regarding the technical details, but includes a hallucination claiming the vulnerability was discovered by Hugging Face."
+            }
+        ]
+    },
+    "92": {
+        "cve_id": "CVE-2002-2324",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately captures the scope and mechanism, though it slightly generalizes the impact beyond the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 8,
+                "rationale": "Accurate, but includes potential impacts like 'malicious software installation' which are not explicitly mentioned in the ground truth."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 7,
+                "rationale": "Correctly identifies the mechanism but introduces 'privilege escalation' as a specific outcome, which is an inference rather than a direct statement."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 10,
+                "rationale": "Provides the most precise and faithful summary of the ground truth without adding unnecessary speculation."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 6,
+                "rationale": "Captures the core issue but is overly simplistic and misses the nuance regarding the 'System Volume Information' directory."
+            }
+        ]
+    },
+    "93": {
+        "cve_id": "CVE-2003-0227",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 8,
+                "rationale": "Accurate summary of the mechanism and impact, though it adds a slight hallucination regarding the scope of compromise (data tampering/unauthorized access) not explicitly in the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Very accurate and concise, though it includes conversational filler at the beginning."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 10,
+                "rationale": "Highly accurate, concise, and strictly adheres to the provided ground truth without adding unnecessary fluff or hallucinations."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 8,
+                "rationale": "Accurate summary, but includes conversational filler and slightly redundant language regarding the impact."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 6,
+                "rationale": "The summary contains a logical error by stating the DoS is caused by executing arbitrary code, and it hallucinates 'data exfiltration' which is not mentioned in the ground truth."
+            }
+        ]
+    },
+    "94": {
+        "cve_id": "CVE-2003-1523",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately captures the vulnerability mechanism and impact without introducing hallucinations."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Provides a concise and accurate summary of the vulnerability and its potential consequences."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 8,
+                "rationale": "Accurate, though it generalizes the specific software name to a generic mail server description."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 9,
+                "rationale": "Very clear and accurate summary that correctly identifies the mechanism and potential impact."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 4,
+                "rationale": "Contains hallucinations by incorrectly attributing the vulnerability to default credentials rather than input sanitization failure."
+            }
+        ]
+    },
+    "95": {
+        "cve_id": "CVE-2003-1554",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 8,
+                "rationale": "Accurately identifies the vulnerability and mechanism, though it adds some speculative impact details not explicitly in the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 8,
+                "rationale": "Provides a concise and accurate summary, though it omits the specific list of vulnerable variables."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 9,
+                "rationale": "Very concise and accurate, capturing the core mechanism and location without unnecessary fluff."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 10,
+                "rationale": "Highly accurate, includes all specific variables mentioned in the ground truth, and maintains a professional tone."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 6,
+                "rationale": "Contains a hallucination by misidentifying one of the variables ('mailto' instead of 'msn')."
+            }
+        ]
+    },
+    "96": {
+        "cve_id": "CVE-2003-1439",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 8,
+                "rationale": "Accurately describes the mechanism and impact, though it adds unnecessary speculation about physical access."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Concise and accurate, correctly identifying the memory-based exposure of passwords and session data."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 8,
+                "rationale": "Good summary, though it refers to the 'SILC protocol' generally rather than the specific software versions mentioned in the ground truth."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 10,
+                "rationale": "Perfectly captures the specific versions, the memory storage mechanism, and the resulting security impact."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 6,
+                "rationale": "Includes a hallucination by suggesting attackers 'intercept' data, whereas the vulnerability is about reading data already stored in memory."
+            }
+        ]
+    },
+    "97": {
+        "cve_id": "CVE-2002-0049",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately captures the mechanism and impact while remaining concise and professional."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Provides a very accurate summary, though it adds 'denial of service' which was not explicitly in the ground truth."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 6,
+                "rationale": "Vague regarding the specific 'Everyone' group privilege and the 'WinReg' key, making it less precise."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 10,
+                "rationale": "Perfectly captures the mechanism, the specific key, and the potential impact without adding hallucinations."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 8,
+                "rationale": "Accurate and concise, though it misses the specific mention of the 'Everyone' group privilege."
+            }
+        ]
+    },
+    "98": {
+        "cve_id": "CVE-2003-1562",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately captures the mechanism and impact without unnecessary fluff, though it misses the specific version context."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 8,
+                "rationale": "Good summary, but slightly overstates the impact by implying direct unauthorized root access rather than just password verification."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 10,
+                "rationale": "Highly accurate, includes version context, and correctly identifies the specific mechanism and its distinction from other CVEs."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 7,
+                "rationale": "Accurate, but includes conversational filler and lacks the specific version context provided in the ground truth."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 6,
+                "rationale": "The phrasing is slightly confusing and technically inaccurate regarding 'bypassing the timing difference' rather than exploiting it."
+            }
+        ]
+    },
+    "99": {
+        "cve_id": "CVE-2003-1392",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 8,
+                "rationale": "Accurately captures the mechanism and impact, though it omits the specific version numbers mentioned in the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 7,
+                "rationale": "Provides a clear summary but includes unnecessary conversational filler and fails to specify the affected versions."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 7,
+                "rationale": "Technically accurate regarding the flaw, but introduces the concept of 'key derivation' which, while likely true, is an inference not explicitly stated in the ground truth."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 10,
+                "rationale": "Perfectly captures the mechanism, impact, and specific version numbers while remaining concise and accurate."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 9,
+                "rationale": "Very accurate and concise, missing only a slightly more detailed explanation of the impact compared to the top-scoring model."
+            }
+        ]
+    },
+    "100": {
+        "cve_id": "CVE-2003-1445",
+        "gemini_evaluations": [
+            {
+                "model": "llama3.2:3b",
+                "score": 9,
+                "rationale": "Accurately captures the mechanism and impact, though it adds a slight assumption about privilege escalation not explicitly in the ground truth."
+            },
+            {
+                "model": "gemma3:4b",
+                "score": 9,
+                "rationale": "Very accurate and concise, though it generalizes the impact slightly more than the ground truth."
+            },
+            {
+                "model": "phi4-mini",
+                "score": 8,
+                "rationale": "Accurate, but misses the specific version information provided in the ground truth."
+            },
+            {
+                "model": "llama3:8b",
+                "score": 8,
+                "rationale": "Accurate, but includes conversational filler and adds potential impacts like data theft not mentioned in the ground truth."
+            },
+            {
+                "model": "smollm2:360m",
+                "score": 4,
+                "rationale": "Contains a significant hallucination by attributing the discovery to Hugging Face and misidentifying the software as an operating system."
+            }
+        ]
+    }
+}
