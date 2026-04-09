@@ -48,7 +48,6 @@ def generate_exp4_plots(json_file='experiment_4_results.json'):
     
     plt.figure(figsize=(10, 6))
     sns.lineplot(data=summary_df, x='k', y='accuracy', hue='model', marker='o', linewidth=2.5, palette=palette)
-    plt.title('SLM Accuracy by Number of CVEs (KG Only Baseline)', fontsize=14, pad=15)
     plt.xlabel('Number of CVEs (k)', fontsize=12)
     plt.ylabel('Accuracy (%)', fontsize=12)
     plt.ylim(-5, 105) 
@@ -57,10 +56,10 @@ def generate_exp4_plots(json_file='experiment_4_results.json'):
     sns.despine()
     
     plt.tight_layout()
-    plt.savefig('plot_exp3_accuracy_vs_k.png', dpi=300)
+    plt.savefig('plot_exp4_accuracy_vs_k.png', dpi=300)
     plt.close()
     
-    print("Success! Saved the Experiment 3 Accuracy plot to your directory.")
+    print("Success! Saved the Experiment 4 Accuracy plot to your directory.")
 
 if __name__ == "__main__":
-    generate_exp3_plots()
+    generate_exp4_plots()

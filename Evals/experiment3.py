@@ -18,7 +18,7 @@ from cwe2.database import Database
 
 random.seed(1000)
 
-def run_experiment_three_kg_mr(iterations_per_k=5, k_max = 10):
+def run_experiment_three_mr(iterations_per_k=5, k_max = 10):
     '''
     This experiment takes a set of k CVEs with a shared common CWE, passes
     them to the SLM, which performs a Map Reduce on their descriptions,
@@ -209,4 +209,4 @@ def run_experiment_three_kg_mr(iterations_per_k=5, k_max = 10):
     print("\nExperiment 3 complete! Results saved to experiment_3_results.json")
 
 if __name__ == "__main__":
-    run_experiment_three_kg_mr(iterations_per_k=100, k_max = 10)
+    run_experiment_three_mr(iterations_per_k=100, k_max = 10)

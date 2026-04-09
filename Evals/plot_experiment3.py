@@ -58,7 +58,7 @@ def generate_evaluation_plots(json_file='experiment_3_results.json'):
     plt.ylim(-5, 105) # Keep percentage scale fixed from 0 to 100
     plt.legend(title='Model', bbox_to_anchor=(1.05, 1), loc='upper left')
     plt.tight_layout()
-    plt.savefig('plot_1_accuracy_vs_k.png', dpi=300)
+    plt.savefig('exp3_plot_1_accuracy_vs_k.png', dpi=300)
     plt.close()
 
     #Response Time vs. Number of CVEs (k)
@@ -69,7 +69,7 @@ def generate_evaluation_plots(json_file='experiment_3_results.json'):
     plt.ylabel('Total Time (Seconds)', fontsize=12)
     plt.legend(title='Model', bbox_to_anchor=(1.05, 1), loc='upper left')
     plt.tight_layout()
-    plt.savefig('plot_2_total_time_vs_k.png', dpi=300)
+    plt.savefig('exp3_plot_2_total_time_vs_k.png', dpi=300)
     plt.close()
 
     #tokens Per Second vs. Number of CVEs (k)
@@ -80,7 +80,7 @@ def generate_evaluation_plots(json_file='experiment_3_results.json'):
     plt.ylabel('Tokens Per Second', fontsize=12)
     plt.legend(title='Model', bbox_to_anchor=(1.05, 1), loc='upper left')
     plt.tight_layout()
-    plt.savefig('plot_3_tokens_per_sec_vs_k.png', dpi=300)
+    plt.savefig('exp3_plot_3_tokens_per_sec_vs_k.png', dpi=300)
     plt.close()
 
 if __name__ == "__main__":

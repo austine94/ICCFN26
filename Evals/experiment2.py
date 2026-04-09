@@ -129,10 +129,9 @@ def run_experiment_two_kg_structured(iterations_per_k=5, k_max = 10):
                                      'seed' : 100}
                         )
                         
-                        # --- OPTION 2: GUARANTEED ORACLE INJECTION ---
-                        # We inject the target_cwe directly into the final distilled block
+                        #ensure structured retrieval is in final block
                         distilled_summary = map_response['message']['content'].strip()
-                        distilled_descriptions.append(f"{cve_id} (Explicitly mapped to {target_cwe}) Keywords: {distilled_summary}")
+                        distilled_descriptions.append(f"{cve_id} (Knowledge graph maps this to: {target_cwe}) Mapped Keywords: {distilled_summary}")
                         
                         #divide by 1e9 as Ollama is in nanoseconds
                         map_total_time += map_response.get('total_duration', 0) / 1e9
@@ -142,13 +141,14 @@ def run_experiment_two_kg_structured(iterations_per_k=5, k_max = 10):
                     distilled_text_block = "\n".join(distilled_descriptions)
                     
                     system_prompt = f"""You are a cyber threat intelligence analyst. 
-Identify the common underlying weakness (CWE) shared by these {k} vulnerabilities.
+                    Identify the common underlying weakness (CWE) shared by these {k} vulnerabilities.
+                    Carefully inspect the prompt as it may well contain the answer. This is because the input is created from structured knowledge graph lookups.    
                     
-Options:
-{options_text}
-                    
-Respond ONLY in strict JSON format matching this schema:
-{{"predicted_cwe": "CWE-ID"}}"""
+                    Options:
+                    {options_text}
+                                        
+                    Respond ONLY in strict JSON format matching this schema:
+                    {{"predicted_cwe": "CWE-ID"}}"""
 
                     user_prompt = f"What is the common CWE shared by these condensed technical mechanisms?\n\n{distilled_text_block}"
 

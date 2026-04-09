@@ -82,6 +82,7 @@ def run_experiment_zero(num_iterations=50):
         prompt = f"""You are a technical cybersecurity analyst. 
         Read the following vulnerability description.
         Provide a 1-2 sentence summary explaining exactly what the vulnerability is and its potential impact.
+        Do not speculate or hallucinate - ground your answer in the description passed to you.
         
         Description: {description}
         

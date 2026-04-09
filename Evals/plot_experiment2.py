@@ -59,7 +59,6 @@ def generate_evaluation_plots(json_file='experiment_2_results.json'):
     #Accuracy vs. Number of CVEs (k)
     plt.figure(figsize=(10, 6))
     sns.lineplot(data=summary_df, x='k', y='accuracy', hue='model', marker='o', linewidth=2.5, palette=palette)
-    plt.title('SLM and Map Reduce Accuracy by Number of CVEs Evaluated', fontsize=14, pad=15)
     plt.xlabel('Number of CVEs (k)', fontsize=12)
     plt.ylabel('Accuracy (%)', fontsize=12)
     plt.ylim(-5, 105) # Keep percentage scale fixed from 0 to 100
@@ -71,7 +70,6 @@ def generate_evaluation_plots(json_file='experiment_2_results.json'):
     #Response Time vs. Number of CVEs (k)
     plt.figure(figsize=(10, 6))
     sns.lineplot(data=summary_df, x='k', y='avg_total_time', hue='model', marker='s', linewidth=2.5, palette=palette)
-    plt.title('Average Response Time', fontsize=14, pad=15)
     plt.xlabel('Number of CVEs (k)', fontsize=12)
     plt.ylabel('Total Time (Seconds)', fontsize=12)
     plt.legend(title='Model', bbox_to_anchor=(1.05, 1), loc='upper left')
@@ -82,7 +80,6 @@ def generate_evaluation_plots(json_file='experiment_2_results.json'):
     #tokens Per Second vs. Number of CVEs (k)
     plt.figure(figsize=(10, 6))
     sns.lineplot(data=summary_df, x='k', y='avg_tokens_per_sec', hue='model', marker='^', linewidth=2.5, palette=palette)
-    plt.title('SLM Answer Speed (Tokens/Sec)', fontsize=14, pad=15)
     plt.xlabel('Number of CVEs (k)', fontsize=12)
     plt.ylabel('Tokens Per Second', fontsize=12)
     plt.legend(title='Model', bbox_to_anchor=(1.05, 1), loc='upper left')

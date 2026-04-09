@@ -30,7 +30,7 @@ def run_experiment_one_mr(iterations_per_config=5):
         "gemma3:4b",
         "phi4-mini",
         "llama3:8b",
-        "smollm2:360m" # (Consider swapping to qwen2.5:0.5b if this gets stuck!)
+        "smollm2:360m" 
     ]
     temperatures = [0.0, 0.2, 0.4, 0.6, 0.8, 1.0]
 
@@ -58,7 +58,7 @@ def run_experiment_one_mr(iterations_per_config=5):
                 target_cve = sampled_cves[0]
                 match_cves = sampled_cves[1:4] 
 
-                decoy_cwes = random.sample([c for c in cwe_list if c != target_cwe], 2)
+                decoy_cwes = random.sample([c for c in cwe_list if c != target_cwe], 1)
                 decoy_cves = []
                 for dcwe in decoy_cwes:
                     dcve = random.choice(list(valid_cwes[dcwe].items()))

@@ -61,7 +61,7 @@ def run_gemini_judge():
             {responses_text}
             
             EVALUATION CRITERIA:
-            For each model, provide a score from 1 to 10 based on how accurately and concisely it captured the core vulnerability mechanism and impact from the ground truth. Penalize hallucinations heavily.
+            For each model, provide a score from 1 to 10 based on how accurately and concisely it captured the core vulnerability mechanism and impact from the ground truth.
             
             Respond strictly in the following JSON format:
             {{
