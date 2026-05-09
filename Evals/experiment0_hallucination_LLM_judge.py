@@ -11,7 +11,7 @@ import time
 import os
 import google.generativeai as genai
 
-API_KEY = "AIzaSyCihTAKvX-PJpGJgBINeIQQBf1jdfSHieY" 
+API_KEY = "" 
 if not API_KEY:
     print("ERROR: Please set the GEMINI_API_KEY environment variable.")
     exit()
