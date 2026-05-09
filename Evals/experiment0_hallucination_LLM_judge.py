@@ -52,9 +52,9 @@ def run_hallucination_judge():
             responses_text += f"\nModel: {slm_name}\nSummary: {slm_summary}\n"
 
         prompt = f"""You are an expert cybersecurity fact-checker.
-            Your only job is to detect hallucinations in AI-generated summaries of a vulnerability.
+            Your only job is to analyse for clear-cut errors in AI-generated summaries of a vulnerability.
             
-            A "hallucination" occurs ONLY if the AI summary includes specific details, software names, attack vectors, impacts, or remediation advice that are NOT present in or can be logically deduced from the Ground Truth. You can accept even the most tentative links..
+            A "hallucination" occurs ONLY if the AI summary includes something that is categorically wrong, and is totally unrelated, against the ground truth. Be lenient please, we want clear cut incorrect hallucinated details.
             
             GROUND TRUTH DESCRIPTION:
             "{ground_truth}"

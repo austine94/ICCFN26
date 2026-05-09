@@ -21,11 +21,6 @@ random.seed(1000)
 def run_experiment_four_kg_structured_no_mr(iterations_per_k=5, k_max = 10):
     '''
     EXPERIMENT 4: Map-Reduce Ablation Study
-    This experiment tests structured KG retrieval but ABLATES the Map phase. 
-    It passes the raw description and appends the explicitly retrieved Target CWE.
-    
-    This proves whether context-window bloat degrades accuracy even when the 
-    correct answer is explicitly provided at the end of each description.
     '''
     
     #ensure LlamaIndex doesn't look for OpenAI keys
@@ -106,23 +101,21 @@ def run_experiment_four_kg_structured_no_mr(iterations_per_k=5, k_max = 10):
                 print(f"  Testing {model}...", end=" ", flush=True)
                 
                 try:
-                    # ABLATE THE MAPPING: Dump raw text and append the KG relation
                     raw_injected_descriptions = []
                     for cve_id, raw_desc in raw_descriptions:
-                        raw_injected_descriptions.append(f"{cve_id} Has description: {raw_desc}\nThe knowledge graph shows this CVE has weakness {target_cwe}.")
+                        raw_injected_descriptions.append(f"{cve_id} Has description: {raw_desc} and the knowledge graph output is {target_cwe}.")
                     
                     raw_text_block = "\n\n".join(raw_injected_descriptions)
                     
                     system_prompt = f"""You are a cyber threat intelligence analyst. 
-                    Identify the common underlying weakness (CWE) shared by these {k} vulnerabilities.
-                                        
+                    
                     Options:
                     {options_text}
                                                                                         
                     Respond ONLY in strict JSON format matching this schema:
                     {{"predicted_cwe": "CWE-ID"}}"""
 
-                    user_prompt = f"What is the common CWE shared by these raw vulnerability descriptions?\n\n{raw_text_block}"
+                    user_prompt = f"What is the weakness shared by these CVEs?\n\n{raw_text_block}"
 
                     start_time = time.time()
                     

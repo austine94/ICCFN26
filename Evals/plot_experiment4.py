@@ -48,8 +48,8 @@ def generate_exp4_plots(json_file='experiment_4_results.json'):
     
     plt.figure(figsize=(10, 6))
     sns.lineplot(data=summary_df, x='k', y='accuracy', hue='model', marker='o', linewidth=2.5, palette=palette)
-    plt.xlabel('Number of CVEs (k)', fontsize=12)
-    plt.ylabel('Accuracy (%)', fontsize=12)
+    plt.xlabel('Number of CVEs (k)', fontsize=16)
+    plt.ylabel('Accuracy (%)', fontsize=16)
     plt.ylim(-5, 105) 
     plt.legend(title='Model', bbox_to_anchor=(1.05, 1), loc='upper left', frameon=False)
     

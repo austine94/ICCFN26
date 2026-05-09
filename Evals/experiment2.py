@@ -150,7 +150,7 @@ def run_experiment_two_kg_structured(iterations_per_k=5, k_max = 10):
                     Respond ONLY in strict JSON format matching this schema:
                     {{"predicted_cwe": "CWE-ID"}}"""
 
-                    user_prompt = f"What is the common CWE shared by these condensed technical mechanisms?\n\n{distilled_text_block}"
+                    user_prompt = f"What is the common CWE shared by these vulnerability summaries?\n\n{distilled_text_block}"
 
                     reduce_response = ollama.chat(
                         model=model,

@@ -67,15 +67,17 @@ def generate_experiment_0_charts():
     plt.figure(figsize=(10, 6))
     bars = plt.bar(sorted_score_models, sorted_scores, color='#4C72B0', edgecolor='black')
     
-    plt.ylabel('Average Score (out of 10, LLM-as-Judge)', fontsize=12)
-    plt.xlabel('Model', fontsize=12)
+    plt.ylabel('Average Score (out of 10, LLM-as-Judge)', fontsize=16)
+    plt.xlabel('Model', fontsize=16)
     plt.ylim(0, 10.5)
-    plt.xticks(rotation=15, ha='right')
+    
+    plt.xticks(rotation=15, ha='right', fontsize=16)
     
     #add data labels on top of bars
     for bar in bars:
         yval = bar.get_height()
-        plt.text(bar.get_x() + bar.get_width()/2, yval + 0.2, f'{yval:.1f}', ha='center', va='bottom', fontsize=11)
+        # Increased text label font size
+        plt.text(bar.get_x() + bar.get_width()/2, yval + 0.2, f'{yval:.1f}', ha='center', va='bottom', fontsize=14)
         
     plt.tight_layout()
     plt.savefig('exp0_average_scores.png', dpi=300)
@@ -85,15 +87,16 @@ def generate_experiment_0_charts():
     plt.figure(figsize=(10, 6))
     bars = plt.bar(sorted_hal_models, sorted_rates, color='#C44E52', edgecolor='black')
     
-    plt.ylabel('Hallucination Rate (%)', fontsize=12)
-    plt.xlabel('Model', fontsize=12)
+    plt.ylabel('Hallucination Rate (%)', fontsize=16)
+    plt.xlabel('Model', fontsize=16)
     plt.ylim(0, max(sorted_rates + [10]) * 1.2) # Ensure headroom for labels
-    plt.xticks(rotation=15, ha='right')
+    
+    plt.xticks(rotation=15, ha='right', fontsize=16)
     
     #add data labels on top of bars
     for bar in bars:
         yval = bar.get_height()
-        plt.text(bar.get_x() + bar.get_width()/2, yval + (max(sorted_rates)*0.02), f'{yval:.1f}%', ha='center', va='bottom', fontsize=11)
+        plt.text(bar.get_x() + bar.get_width()/2, yval + (max(sorted_rates)*0.02), f'{yval:.1f}%', ha='center', va='bottom', fontsize=14)
         
     plt.tight_layout()
     plt.savefig('exp0_hallucination_rates.png', dpi=300)

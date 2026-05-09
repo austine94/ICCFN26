@@ -4,8 +4,8 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary adds 'unauthorized access to sensitive data', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
@@ -14,18 +14,18 @@
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary adds 'unauthorized access or control over systems', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary adds 'take control of the affected system', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary incorrectly identifies the software as 'Apache Tomcat (HTTPServerExtension)' instead of 'Acme Labs thttpd' and claims it was 'discovered by Hugging Face', which is not in the ground truth."
+                "hallucination_details": "The summary incorrectly identifies the affected software as 'Apache Tomcat server' instead of 'Acme Labs thttpd'."
             }
         ]
     },
@@ -34,28 +34,28 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary mentions 'data breaches' and 'privilege escalation', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary mentions 'data theft' and 'denial of service', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary mentions 'full control over affected systems', which is not explicitly stated in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary mentions 'unauthorized access or data theft', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
-                "has_hallucination": true,
-                "hallucination_details": "The summary incorrectly identifies Cadaver as a 'library' and mentions 'data exfiltration', which is not in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             }
         ]
     },
@@ -70,7 +70,7 @@
             {
                 "model": "gemma3:4b",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability involves injecting a 'URL-encoded dot (.)', whereas the ground truth specifies a '.%252e' (encoded dot dot) sequence."
+                "hallucination_details": "The summary incorrectly describes the exploit vector as a 'URL-encoded dot (.) character' instead of the specific '.%252e' sequence required."
             },
             {
                 "model": "phi4-mini",
@@ -79,13 +79,13 @@
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to access to 'configuration files or user information', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability is caused by 'a missing encoding in the URL', which is not stated in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             }
         ]
     },
@@ -94,8 +94,8 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": false,
-                "hallucination_details": "None"
+                "has_hallucination": true,
+                "hallucination_details": "The summary incorrectly identifies the vulnerability as a 'buffer overflow'."
             },
             {
                 "model": "gemma3:4b",
@@ -109,13 +109,13 @@
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary incorrectly identifies the vulnerability as a 'buffer overflow issue', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
-                "has_hallucination": false,
-                "hallucination_details": "None"
+                "has_hallucination": true,
+                "hallucination_details": "The summary incorrectly states the vulnerability occurs when an attacker uses a 'valid password that has been incorrectly inputted', whereas the ground truth specifies the issue is with an 'invalid password'."
             }
         ]
     },
@@ -124,13 +124,13 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'unauthorized access and control of sensitive data', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability 'represents a significant security risk', which is an assessment not present in the ground truth."
+                "hallucination_details": "The summary states it 'shares similarities with CVE-1999-0840', whereas the ground truth explicitly states it is not clear whether this is the same issue."
             },
             {
                 "model": "phi4-mini",
@@ -139,13 +139,13 @@
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'unauthorized access and control of system resources, compromising the security and integrity of the affected systems', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'exposing sensitive data and compromising system security', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             }
         ]
     },
@@ -154,28 +154,28 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "Claims the vulnerability allows an attacker to 'inject malicious SMB password files' and gain 'elevated privileges', neither of which are mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "Claims this could lead to 'complete system compromise', which is an extrapolation not present in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
                 "has_hallucination": true,
-                "hallucination_details": "Claims the vulnerability involves 'remote attackers' and 'write access on SMB shares', whereas the ground truth specifies 'local users'."
+                "hallucination_details": "The summary incorrectly states the vulnerability allows 'remote attackers with write access on SMB shares', whereas the ground truth specifies it is a local user vulnerability."
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "Claims this could lead to 'privilege escalation', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "Incorrectly identifies the affected versions as '4.0 and 4.1' and describes qpopper as an 'operating system'."
+                "hallucination_details": "The summary incorrectly describes the vulnerability as occurring 'when a user attempts to navigate to a malicious directory', which misrepresents the nature of an untrusted search path vulnerability involving the PATH environment variable."
             }
         ]
     },
@@ -194,18 +194,18 @@
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "Includes a specific CVE identifier (CVE-2021-33777) and mentions 'remote DLL injection', neither of which are in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "Identifies the vulnerability as a 'local privilege escalation flaw', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "Mentions that the file is 'opened and executed' and that it can 'expose sensitive data to unauthorized access', neither of which are in the ground truth."
+                "hallucination_details": "The model claims the vulnerability can be exploited to 'gain unauthorized access to sensitive data and systems', which is not supported by the ground truth description of a local DoS and detection bypass."
             }
         ]
     },
@@ -214,13 +214,13 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability exploits a 'flaw in the device's handling of invalid packets', which is an added technical explanation not present in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims it could cause downtime for 'dependent systems', which is an extrapolation not present in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
@@ -229,13 +229,13 @@
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the device becomes 'unresponsive' and mentions 'loss of connectivity for users', which are specific impact details not present in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims it can cause the 'entire network' to become unresponsive, whereas the ground truth only specifies the switch."
+                "hallucination_details": "The summary claims the vulnerability was 'discovered by Hugging Face' and that it 'could potentially lead to unauthorized access or data exfiltration', both of which are fabricated details not present in the ground truth."
             }
         ]
     },
@@ -245,7 +245,7 @@
             {
                 "model": "llama3.2:3b",
                 "has_hallucination": true,
-                "hallucination_details": "Identified the vulnerability as a 'Cross-Site Scripting (XSS) attack' and claimed it allows injecting 'malicious JavaScript code', neither of which are mentioned in the ground truth."
+                "hallucination_details": "The summary incorrectly identifies the vulnerability as a 'remote code execution (RCE) vulnerability'."
             },
             {
                 "model": "gemma3:4b",
@@ -254,8 +254,8 @@
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "Incorrectly identified the vulnerability as an 'SQL injection or similar web application flaw'."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
@@ -265,7 +265,7 @@
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "Fabricated a discovery date of '2019', claimed the fields are used for 'payment processing', and stated it allows access to 'sensitive financial information' and 'control over the website's functionality'."
+                "hallucination_details": "The summary claims the vulnerability occurs 'without compromising the security of the website's backend system', which is a contradiction as price manipulation via hidden fields is a direct compromise of the application's integrity."
             }
         ]
     },
@@ -274,8 +274,8 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "Identifies the vulnerability as a 'denial-of-service (DoS) condition' and claims it allows an attacker to 'exhaust the system's login attempt limit', which contradicts the ground truth that the system fails to disconnect/limit attempts."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
@@ -289,13 +289,13 @@
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "Labels the vulnerability as an 'authentication bypass issue', which is a specific technical classification not present in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
-                "has_hallucination": true,
-                "hallucination_details": "Claims the vulnerability allows an attacker to 'bypass the security measures', which is an overstatement of the brute-force mechanism described."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             }
         ]
     },
@@ -304,28 +304,28 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the impact could result in 'unauthorized access, data theft, or even complete control', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the impact leads to 'complete system compromise', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary mentions 'excessively lengthy IRLRC strings', which is a hallucinated term not present in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the impact includes 'stealing sensitive information', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability is in the 'mIRC server's configuration file', which is a complete fabrication; the ground truth specifies the client and the URL handling."
+                "hallucination_details": "The summary incorrectly claims the vulnerability involves the 'mIRC server's configuration file', whereas the ground truth specifies it is triggered via a long irc:// URL."
             }
         ]
     },
@@ -334,28 +334,28 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'intellectual property theft', which is an impact not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability exposes 'sensitive application logic', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability is due to 'improper handling of double-byte characters', which is an explanation not present in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'intellectual property theft', which is an impact not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability potentially exposes 'malware', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             }
         ]
     },
@@ -369,23 +369,23 @@
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'data theft, unauthorized control, and potential denial of service', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'full control over affected systems', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'unauthorized access or control of affected systems', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'data exfiltration', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             }
         ]
     },
@@ -395,27 +395,27 @@
             {
                 "model": "llama3.2:3b",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability leads to 'unauthorized access', 'data theft', 'hijack user sessions', and 'steal sensitive user data', which are speculative impacts not mentioned in the ground truth."
+                "hallucination_details": "Claims the vulnerability could lead to 'unauthorized code execution on the server', which is incorrect for a reflected XSS vulnerability."
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'stealing user credentials', 'redirecting users to malicious sites', or 'defacing the website', which are speculative impacts not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability exploits 'unescaped input fields' and leads to 'session hijacking and data theft', which are details not present in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'theft of sensitive information' and 'session hijacking', which are speculative impacts not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability leads to 'unauthorized access and data theft', which are speculative impacts not mentioned in the ground truth."
+                "hallucination_details": "Claims the vulnerability can be used for 'denial-of-service attacks', which is not supported by the ground truth."
             }
         ]
     },
@@ -429,13 +429,13 @@
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could allow attackers to 'take complete control of the server', which is not supported by the ground truth (which only mentions executing arbitrary SQL commands)."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to compromises of 'financial details', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
@@ -444,8 +444,8 @@
             },
             {
                 "model": "smollm2:360m",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability is caused by 'missing input validation and sanitization mechanism', which is not stated in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             }
         ]
     },
@@ -455,27 +455,27 @@
             {
                 "model": "llama3.2:3b",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability is 'unlikely to result in unauthorized access or data exfiltration on its own', which is a speculative assessment not present in the ground truth."
+                "hallucination_details": "Incorrectly identifies the vulnerability as a 'directory traversal vulnerability' and claims it allows attackers to 'access sensitive files and directories'."
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'potential compromise of the entire system', 'modify core functionality', or 'gain unauthorized access to the server', which are not supported by the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'further exploitation if attackers gain access to system files', which is a speculative impact not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
                 "has_hallucination": true,
-                "hallucination_details": "The summary incorrectly identifies the characters as 'commas', whereas the ground truth specifies double quotes (\"), single quotes ('), or greater-than signs (>)."
+                "hallucination_details": "Incorrectly lists 'commas' as one of the characters used to trigger the vulnerability."
             },
             {
                 "model": "smollm2:360m",
-                "has_hallucination": false,
-                "hallucination_details": "None"
+                "has_hallucination": true,
+                "hallucination_details": "Claims the vulnerability results in 'potentially compromising user accounts', which is not supported by the ground truth."
             }
         ]
     },
@@ -485,7 +485,7 @@
             {
                 "model": "llama3.2:3b",
                 "has_hallucination": true,
-                "hallucination_details": "Identified the vulnerability as a 'directory traversal attack', which is not mentioned in the ground truth."
+                "hallucination_details": "The summary incorrectly identifies the vulnerability as a 'remote code execution (RCE) vulnerability'."
             },
             {
                 "model": "gemma3:4b",
@@ -494,8 +494,8 @@
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "Describes the flaw as 'misleading administrative errors' and claims it leads to 'significant security breaches' and 'compromises system integrity', which are speculative impacts not present in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
@@ -504,8 +504,8 @@
             },
             {
                 "model": "smollm2:360m",
-                "has_hallucination": true,
-                "hallucination_details": "Claims the vulnerability is triggered by 'invalid credentials, such as incorrect passwords or incorrect usernames', which is not supported by the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             }
         ]
     },
@@ -535,7 +535,7 @@
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability is caused by 'excessive SMTP requests' (a flood/resource exhaustion attack), whereas the ground truth specifies a 'buffer overflow in the SMTP HELO command'."
+                "hallucination_details": "The summary incorrectly states the vulnerability involves 'overwhelming NT mail servers with excessive email messages' and 'potential data breaches', whereas the ground truth specifies a buffer overflow in the SMTP HELO command."
             }
         ]
     },
@@ -549,23 +549,23 @@
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'denial of service', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'full control over the affected system', which is an extrapolation not present in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary incorrectly identifies the vulnerability as a 'server-side request forgery (SSRF)'."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the script is 'executed with elevated privileges' and mentions 'data exfiltration', neither of which are in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             }
         ]
     },
@@ -589,13 +589,13 @@
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary specifies the vulnerability is in 'Mozilla's JavaScript engine', whereas the ground truth only states 'Mozilla' generally."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary mentions 'web application's HTML form', whereas the ground truth refers to Mozilla browser forms."
+                "hallucination_details": "The summary claims the vulnerability involves malicious code injecting control characters into a 'web application's HTML form', whereas the ground truth specifies the vulnerability is in Mozilla (the browser) itself, not the web application."
             }
         ]
     },
@@ -604,18 +604,18 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
+                "has_hallucination": true,
+                "hallucination_details": "The summary states the vulnerability exists in version 5.0.0.4, whereas the ground truth states it is in versions before 5.0.0.4."
+            },
+            {
+                "model": "gemma3:4b",
                 "has_hallucination": false,
                 "hallucination_details": "None"
             },
             {
-                "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could result in 'denial of service, or installation of malware', which are not mentioned in the ground truth."
-            },
-            {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary incorrectly identifies the attack vector as 'crafted input through the 'time' or 'date' FTP commands' instead of the MDTM command."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
@@ -625,7 +625,7 @@
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary invents specific technical details including the use of the 'ftp' command, the '-u' option, the '-t' flag, and a specific time zone argument of '-1200 (UTC)'."
+                "hallucination_details": "The summary claims the vulnerability is in the 'ftpd' server running on port 11300, which is not mentioned in the ground truth."
             }
         ]
     },
@@ -634,28 +634,28 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary mentions 'unauthorized access, data tampering, or even complete control' as specific impacts, which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability grants the attacker 'full control' over the affected system, which is not stated in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary mentions 'data breaches' and 'run harmful software', which are not present in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the attacker can 'inject malicious code' via the DNS response, whereas the ground truth states the vulnerability allows execution of arbitrary code via length values that are not properly validated."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary mentions 'gain unauthorized access to the system or cause damage to sensitive data', which are not present in the ground truth."
+                "hallucination_details": "The summary claims the attack allows execution 'without being detected', which is a fabricated detail not present in the ground truth."
             }
         ]
     },
@@ -725,7 +725,7 @@
             {
                 "model": "llama3.2:3b",
                 "has_hallucination": true,
-                "hallucination_details": "Mentions 'lateral movement within the network', which is not present in or logically deduced from the ground truth."
+                "hallucination_details": "Claims the vulnerability allows execution of malicious code on the 'remote FTP site', whereas the ground truth states the client is the one affected."
             },
             {
                 "model": "gemma3:4b",
@@ -735,7 +735,7 @@
             {
                 "model": "phi4-mini",
                 "has_hallucination": true,
-                "hallucination_details": "Claims the vulnerability involves 'unprotected FTP site using Kerberos authentication', which misrepresents the client-side nature of the vulnerability."
+                "hallucination_details": "Claims the vulnerability involves exploiting a 'compromised server using Kerberos authentication', which is not mentioned in the ground truth."
             },
             {
                 "model": "llama3:8b",
@@ -745,7 +745,7 @@
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "Claims the vulnerability allows an attacker to 'bypass password authentication' and execute code 'on a remote FTP site', whereas the ground truth states the client executes the code."
+                "hallucination_details": "Claims the vulnerability allows an attacker to 'bypass password authentication' and execute code on a 'remote FTP site', both of which are incorrect."
             }
         ]
     },
@@ -754,8 +754,8 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the impact is a 'complete system crash or freeze, potentially leading to data loss or other security issues', whereas the ground truth specifies only an 'application crash'."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
@@ -769,13 +769,13 @@
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability 'may allow an attacker to gain unauthorized access or execute arbitrary code', which is not supported by the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability was 'discovered by Hugging Face', which is not present in the ground truth."
+                "hallucination_details": "The model claims the attack occurs when an attacker 'injects a specially crafted ICO file into a system's network', which is a hallucination as the vulnerability is a local file processing issue, not a network injection vulnerability."
             }
         ]
     },
@@ -799,13 +799,13 @@
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'code execution', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability allows an attacker to 'modify' files and incorrectly identifies the encoded sequence as './' instead of '%2F..'."
+                "hallucination_details": "The summary claims the vulnerability allows an attacker to 'potentially modify' any file, whereas the ground truth only specifies the ability to 'read arbitrary files'."
             }
         ]
     },
@@ -819,23 +819,23 @@
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims this 'could lead to complete system compromise and unauthorized control', which is an extrapolation not present in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary adds details about 'knowledge about the system architecture or programming language' and 'unauthorized execution of privileged commands', which are not in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims this 'could potentially lead to complete system compromise and unauthorized access to sensitive data or systems', which is an extrapolation not present in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims it can be exploited through 'command injection attacks or by exploiting unpatched vulnerabilities in other software components', which contradicts the ground truth stating the attack vectors are 'unknown'."
+                "hallucination_details": "The summary claims the vulnerability was 'discovered by Hugging Face' and occurs 'through unpatched vulnerabilities', neither of which are present in the ground truth."
             }
         ]
     },
@@ -854,8 +854,8 @@
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary incorrectly identifies the software as 'MS Office 365's Outlook Web Access', whereas the ground truth only specifies 'Microsoft Outlook Web Access (OWA)'."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
@@ -864,8 +864,8 @@
             },
             {
                 "model": "smollm2:360m",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the attacker uses 'their previously authenticated OWA password' and mentions 'data exfiltration', neither of which are in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             }
         ]
     },
@@ -875,7 +875,7 @@
             {
                 "model": "llama3.2:3b",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'complete system failure or data loss', which is not mentioned in the ground truth."
+                "hallucination_details": "The summary claims the vulnerability is a 'buffer overflow', which is not stated in the ground truth."
             },
             {
                 "model": "gemma3:4b",
@@ -884,18 +884,18 @@
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could allow 'unauthorized access or control over affected systems', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary identifies the vulnerability as a 'buffer overflow issue', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the attack involves 'injecting a null-terminated string containing only the null byte character into the connection parameters' and mentions 'data corruption or other security issues', none of which are in the ground truth."
+                "hallucination_details": "The summary claims the vulnerability allows attackers to 'crash the system' (implying OS-level impact) and 'potentially lead to data loss', neither of which are supported by the ground truth."
             }
         ]
     },
@@ -905,17 +905,17 @@
             {
                 "model": "llama3.2:3b",
                 "has_hallucination": true,
-                "hallucination_details": "Identified the vulnerability as a 'directory traversal attack', which is not mentioned in the ground truth."
+                "hallucination_details": "The summary incorrectly identifies the vulnerability as a 'directory traversal attack', which is a different class of vulnerability than the path disclosure described in the ground truth."
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": false,
-                "hallucination_details": "None"
+                "has_hallucination": true,
+                "hallucination_details": "The summary claims the vulnerability could be exploited to 'execute malicious code on the server', which is not supported by the ground truth."
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": false,
-                "hallucination_details": "None"
+                "has_hallucination": true,
+                "hallucination_details": "The summary claims the vulnerability 'could allow attackers remote access', which is a significant escalation not present in the ground truth."
             },
             {
                 "model": "llama3:8b",
@@ -925,7 +925,7 @@
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "Claimed the vulnerability can be exploited to 'gain unauthorized access to sensitive data or systems', which is an unsubstantiated impact not present in the ground truth."
+                "hallucination_details": "The summary claims the vulnerability can be exploited to 'gain unauthorized access to sensitive data or systems', which is an overstatement of the path disclosure vulnerability described."
             }
         ]
     },
@@ -934,13 +934,13 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary specifies 'user credentials or financial data', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary specifies 'user credentials, order details, and other confidential information', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
@@ -950,12 +950,12 @@
             {
                 "model": "llama3:8b",
                 "has_hallucination": true,
-                "hallucination_details": "The summary specifies 'user credentials or financial information', which are not mentioned in the ground truth."
+                "hallucination_details": "The model specifies the data includes 'user credentials or financial information', which is not mentioned in the ground truth."
             },
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary adds that the vulnerability can be exploited by attackers who have access to 'MidiCart's database or its associated files' and mentions 'compromise of user accounts', which are not in the ground truth."
+                "hallucination_details": "The model specifies the data includes 'user data or payment details', which is not mentioned in the ground truth."
             }
         ]
     },
@@ -964,28 +964,28 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the crash could cause the system to become unresponsive or crash entirely, which is not supported by the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could disrupt users' ability to access files or applications, which is not supported by the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could allow attackers remote control over affected systems, which is not supported by the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could allow an attacker to execute arbitrary code on vulnerable systems, which is not supported by the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary states the attacker can 'cause a denial-of-service (DoS) by sending a core dump', whereas the ground truth states the DoS is the result of a core dump caused by the web page."
+                "hallucination_details": "The summary claims the vulnerability results in 'data corruption', which is not mentioned in the ground truth and is not a consequence of a core dump DoS."
             }
         ]
     },
@@ -999,8 +999,8 @@
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary mentions 'unauthorized purchases', 'revenue theft', and 'damage to the retailer\u2019s reputation', which are speculative impacts not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
@@ -1015,7 +1015,7 @@
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability allows 'unauthorized access to customer accounts' and 'compromise their personal information', which are not mentioned in the ground truth."
+                "hallucination_details": "The model incorrectly identifies the vulnerability as a 'cross-site scripting (XSS) attack', whereas the ground truth describes a client-side encryption/decryption flaw."
             }
         ]
     },
@@ -1024,8 +1024,8 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'unauthorized access to the network', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
@@ -1034,18 +1034,18 @@
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability leads to 'resource exhaustion', which is not explicitly stated in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the device becomes 'unable to process legitimate traffic' and mentions 'significant downtime for affected organizations', which are not in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary incorrectly states the system will 'disconnect the user after multiple failed attempts' (the ground truth says it fails to disconnect) and claims it could 'compromise sensitive data', which is not in the ground truth."
+                "hallucination_details": "The summary claims the attack causes the system to 'disconnect the user after multiple failed attempts' (which is the opposite of the vulnerability, which is the failure to disconnect) and claims it could 'compromise sensitive data', which is not mentioned in the ground truth."
             }
         ]
     },
@@ -1054,28 +1054,28 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability leads to 'unauthorized access to user accounts' and 'executing arbitrary code on the victim's browser', which are specific impact scenarios not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability leads to 'account takeover or redirection to a phishing site', which are specific impact scenarios not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability leads to 'account hijacking' and 'data theft from user sessions', which are specific impact scenarios not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability allows an attacker to 'steal user credentials, hijack sessions, or perform other malicious actions', which are specific impact scenarios not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability involves injecting code 'into the user's session cookie' and mentions a 'JavaScript alert box', neither of which are present in the ground truth."
+                "hallucination_details": "The summary claims the attacker injects code into a 'user's session' and that the impact allows them to 'execute arbitrary web scripts or HTML on the affected system', which misrepresents the nature of XSS (which executes in the victim's browser, not on the server/system)."
             }
         ]
     },
@@ -1084,8 +1084,8 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary mentions 'deploy malware', which is not present in or strictly logically deduced from the Ground Truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
@@ -1099,13 +1099,13 @@
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary mentions 'disrupt normal operations', which is not present in or strictly logically deduced from the Ground Truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
-                "has_hallucination": true,
-                "hallucination_details": "The summary mentions 'other malicious activities', which is not present in or strictly logically deduced from the Ground Truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             }
         ]
     },
@@ -1114,8 +1114,8 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could grant 'elevated privileges', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
@@ -1125,12 +1125,12 @@
             {
                 "model": "phi4-mini",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability allows 'file system traversal' and 'privilege escalation', neither of which are mentioned in the ground truth."
+                "hallucination_details": "The summary claims the vulnerability leads to 'potential privilege escalation', which is not mentioned in the ground truth."
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability is a 'privilege escalation issue' and mentions 'data modification', 'data breaches', or 'system compromise', none of which are in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
@@ -1144,28 +1144,28 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'privilege escalation', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'data theft' or 'deployment of malware', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
                 "has_hallucination": true,
-                "hallucination_details": "The summary incorrectly identifies the vulnerability as an 'insecure direct object reference flaw' instead of a 'remote file inclusion' vulnerability."
+                "hallucination_details": "The model incorrectly identifies the vulnerability as an 'insecure direct object reference' (IDOR) issue, whereas the ground truth explicitly states it is a 'remote file inclusion' vulnerability."
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'data theft', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability allows attackers to 'bypass security measures', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             }
         ]
     },
@@ -1174,23 +1174,23 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability is in the 'Samba file sharing protocol' (the ground truth only specifies 'Samba') and adds specific impacts like 'unauthorized access, data tampering, or even complete control' which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary incorrectly identifies the root cause as a 'failure to properly deallocate' the data structure, whereas the ground truth states it does not 'properly terminate' the data structure."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary describes the issue as an 'uncontrolled termination error' and mentions 'crafted input', neither of which are present in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary identifies the issue as an 'unhandled buffer overflow in Samba's enum_csc_policy function', whereas the ground truth specifies it is a 'data structure' issue, not a function issue."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
@@ -1204,28 +1204,28 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the impact includes 'sensitive data exfiltration or system takeover', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the impact includes 'data theft, unauthorized access, and potential control of the server', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability allows 'remote code execution' and applies to 'unauthenticated users', whereas the ground truth specifies 'local users'."
+                "hallucination_details": "The summary claims the vulnerability leads to 'remote code execution', whereas the ground truth specifies it is for 'local users'."
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the impact includes 'stealing sensitive data or installing malware', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability allows users to 'bypass security measures and potentially gain unauthorized access to sensitive data or systems', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             }
         ]
     },
@@ -1234,8 +1234,8 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'a complete system compromise, allowing attackers to execute malicious code with elevated privileges.' The ground truth does not mention elevated privileges or system compromise."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
@@ -1249,8 +1249,8 @@
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary explicitly identifies the vulnerability as a 'buffer overflow issue.' The ground truth describes an integer handling issue (negative size treated as large positive) leading to memory allocation issues, but does not classify it as a buffer overflow."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
@@ -1265,7 +1265,7 @@
             {
                 "model": "llama3.2:3b",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could allow attackers to 'escalate privileges', which is not mentioned in the ground truth."
+                "hallucination_details": "Claims the vulnerability could lead to 'execution of malicious code', which is not supported by the ground truth of a directory traversal/file read vulnerability."
             },
             {
                 "model": "gemma3:4b",
@@ -1285,7 +1285,7 @@
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary incorrectly identifies the attack vector as a 'triple slash (/)' instead of the 'triple dot (...)' specified in the ground truth."
+                "hallucination_details": "Claims the vulnerability allows access to any file 'regardless of its permissions or ownership' and incorrectly describes the trigger as a single dot ('.') instead of a triple dot ('...')."
             }
         ]
     },
@@ -1305,17 +1305,17 @@
             {
                 "model": "phi4-mini",
                 "has_hallucination": true,
-                "hallucination_details": "The summary incorrectly identifies the attack vector as a double-dot sequence ('../') at the end of URLs, whereas the ground truth specifies a leading '/./'."
+                "hallucination_details": "The summary claims the vulnerability allows reading 'encrypted documents', whereas the ground truth specifies 'password protected files'."
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary mentions 'privilege escalation' as a potential impact, which is not supported by the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
-                "has_hallucination": true,
-                "hallucination_details": "The summary incorrectly claims the vulnerability makes the application susceptible to 'SQL injection attacks' and 'cross-site scripting (XSS) vulnerabilities'."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             }
         ]
     },
@@ -1325,7 +1325,7 @@
             {
                 "model": "llama3.2:3b",
                 "has_hallucination": true,
-                "hallucination_details": "The summary incorrectly identifies the vulnerability as 'remote code execution (RCE)' and claims it allows an attacker to 'execute arbitrary commands', neither of which are mentioned in the ground truth."
+                "hallucination_details": "The summary incorrectly identifies the vulnerability as a 'remote code execution' vulnerability."
             },
             {
                 "model": "gemma3:4b",
@@ -1345,7 +1345,7 @@
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the DoS is caused by 'restoring the router's configuration files', which is not mentioned in the ground truth; the ground truth specifies restoring factory defaults."
+                "hallucination_details": "The summary states 'This vulnerability is not exploitable', which contradicts the ground truth that it allows remote attackers to cause a denial of service."
             }
         ]
     },
@@ -1359,8 +1359,8 @@
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to the exposure of 'configuration files, source code, or user information', which are specific examples not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
@@ -1369,13 +1369,13 @@
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could allow attackers to 'modify critical information', whereas the ground truth only specifies the ability to 'read arbitrary files'."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability was 'discovered by Hugging Face', that it allows an attacker to 'bypass authentication', and that it could lead to 'file deletion', none of which are in the ground truth."
+                "hallucination_details": "The summary incorrectly claims the vulnerability allows an attacker to 'execute arbitrary code' and 'modify files', which contradicts the ground truth of a directory traversal vulnerability limited to reading arbitrary files."
             }
         ]
     },
@@ -1405,7 +1405,7 @@
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The model incorrectly identifies the parameters as (_zb_path) and (_dir), misnames the files as _login.php, and incorrectly attributes the vulnerability to 'PHP' rather than ZeroBoard."
+                "hallucination_details": "The summary incorrectly states 'The vulnerability in PHP', implying the vulnerability exists in the PHP language itself rather than the ZeroBoard application."
             }
         ]
     },
@@ -1414,8 +1414,8 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'unauthorized access to sensitive data', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
@@ -1424,18 +1424,18 @@
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability leads to 'security breaches' and 'arbitrary code injection', which are not explicitly stated in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'unauthorized access or data theft', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability is triggered when an 'FTP server sends a large file over the network', whereas the ground truth specifies it is triggered by a 'long banner'."
+                "hallucination_details": "The summary claims the vulnerability is caused by a 'large buffer size in the client's header', whereas the ground truth specifies it is caused by a 'long banner'."
             }
         ]
     },
@@ -1449,13 +1449,13 @@
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The claim that this could lead to 'complete control over the UPB system' is an extrapolation not present in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The claim that this could result in 'full control over the board' is an extrapolation not present in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
@@ -1465,7 +1465,7 @@
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The claim that the attacker can gain access even if they have access to the 'UPB server's database' is a hallucinated scenario not present in the ground truth."
+                "hallucination_details": "The summary incorrectly identifies the vulnerability as a 'cross-site scripting (XSS) attack', which is unrelated to the described account impersonation flaw."
             }
         ]
     },
@@ -1474,28 +1474,28 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'unauthorized access or data theft' and 'compromise user sessions', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'unauthorized access, data theft, or redirection of users to a malicious site' and 'compromise the server', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability is caused by 'improper input sanitization' and could lead to 'data theft and system compromise', none of which are mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability can be exploited to 'steal user data, hijack sessions', 'identity theft or financial loss', and 'compromise the security of users', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the error page is displayed 'when accessed by users with malicious intent', which is not present in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             }
         ]
     },
@@ -1504,8 +1504,8 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary incorrectly identifies the vulnerability as a 'remote code execution (RCE) vulnerability'."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
@@ -1549,13 +1549,13 @@
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability leads to 'data theft or system compromise', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability allows attackers to 'bypass the network's buffer overflow protection mechanism', which is not present in the ground truth."
+                "hallucination_details": "The summary claims the vulnerability allows attackers to 'bypass the network's buffer overflow protection mechanism', which is not mentioned in the ground truth and is a specific technical claim not supported by the description."
             }
         ]
     },
@@ -1564,8 +1564,8 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could enable an attacker to 'gain unauthorized access to the system and potentially escalate privileges', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
@@ -1574,18 +1574,18 @@
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability poses risks including 'data loss, system compromise, and further network attacks', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'unauthorized access or control of the affected system, compromising sensitive data and disrupting normal operations', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary incorrectly states that the Denial of Service is caused 'by executing arbitrary code', whereas the ground truth lists these as two separate potential outcomes of the buffer overflow."
+                "hallucination_details": "The summary incorrectly states that the vulnerability allows attackers to cause a Denial of Service 'by executing arbitrary code', whereas the ground truth states the vulnerability allows for DoS AND possibly arbitrary code execution as separate outcomes of the buffer overflow."
             }
         ]
     },
@@ -1594,8 +1594,8 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'unauthorized access, data tampering', 'data breaches', and 'potential financial loss', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
@@ -1604,18 +1604,18 @@
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'unauthorized access control changes' and 'data theft', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'steal sensitive information', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'unauthorized access', 'data exfiltration', and 'command-and-control (C2) communication', which are not mentioned in the ground truth."
+                "hallucination_details": "The summary claims the code is executed on the 'user's device', whereas the vulnerability is a server-side injection allowing remote attackers to execute code on the server."
             }
         ]
     },
@@ -1624,28 +1624,28 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "Claims the vulnerability has a 'high potential impact' and can be exploited 'without requiring any user interaction or privileges', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "Claims the vulnerability leads to 'disrupting network monitoring' and 'service outages', which are speculative impacts not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "Incorrectly identifies the vulnerability as a 'buffer overflow' instead of an 'out-of-bounds read'."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "Claims the vulnerability has the potential to 'crash the system' and 'disrupting network traffic', whereas the ground truth only specifies a crash of the TCPDUMP application."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
-                "has_hallucination": true,
-                "hallucination_details": "States the packet is 'sent over TCPDUMP', which is factually incorrect as TCPDUMP is the software processing the packet, not the transport medium."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             }
         ]
     },
@@ -1655,22 +1655,22 @@
             {
                 "model": "llama3.2:3b",
                 "has_hallucination": true,
-                "hallucination_details": "Identified the vulnerability as 'remote code execution (RCE)', claimed it allows 'injecting malicious input', and suggested impacts like 'system compromise' and 'lateral movement', none of which are in the ground truth."
+                "hallucination_details": "The summary incorrectly identifies the vulnerability as a 'remote code execution (RCE) vulnerability'."
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "Claimed exploitation could lead to 'gaining unauthorized access to sensitive files and directories' and 'enabling further attacks or data breaches', which are speculative impacts not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "Claimed the vulnerability leads to 'potential system compromise', which is an escalation not supported by the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "Claimed the vulnerability could lead to 'further exploitation' and 'launch more targeted attacks', which are speculative impacts not present in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
@@ -1689,18 +1689,18 @@
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could 'lead to further exploitation', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability leads to 'unauthorized disclosure of confidential data' and 'impacting security posture significantly', which are not supported by the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims it could allow an attacker to 'gain unauthorized access to sensitive files', which is not supported by the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
@@ -1715,7 +1715,7 @@
             {
                 "model": "llama3.2:3b",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability allows an attacker to 'inject malicious data into the MySQL server' and 'gain unauthorized access to sensitive data', which are not mentioned in the ground truth."
+                "hallucination_details": "The summary claims the vulnerability can be exploited 'without requiring any authentication or privileges', which is not mentioned in the ground truth and is an assumption about the exploit vector."
             },
             {
                 "model": "gemma3:4b",
@@ -1735,7 +1735,7 @@
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability allows attackers to 'inject malicious code into a DNS response', whereas the ground truth states the vulnerability is triggered by a DNS response from a remote DNS server."
+                "hallucination_details": "The summary claims the vulnerability allows attackers to 'inject malicious code into a DNS response', whereas the ground truth states the vulnerability is triggered by the DNS response itself, not by the attacker injecting code into the response."
             }
         ]
     },
@@ -1744,13 +1744,13 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability enables an attacker to run malicious code with 'elevated privileges', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'data theft' and 'malicious software installation', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
@@ -1764,8 +1764,8 @@
             },
             {
                 "model": "smollm2:360m",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability can 'compromise sensitive data', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             }
         ]
     },
@@ -1789,13 +1789,13 @@
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary adds 'financial losses or other malicious activities' and 'control over phone functionality', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability allows local users to 'intercept' the credentials, whereas the ground truth states they are stored in the registry, implying access rather than interception."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             }
         ]
     },
@@ -1819,13 +1819,13 @@
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'stealing sensitive data or installing malware', which are specific impacts not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary invents a specific name for the vulnerability: 'BadMinCdllBufOverflow'."
+                "hallucination_details": "The model fabricated a specific name for the vulnerability: 'BadMinCdllBufOverflow'."
             }
         ]
     },
@@ -1835,12 +1835,12 @@
             {
                 "model": "llama3.2:3b",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability allows the attacker to 'execute arbitrary commands', whereas the ground truth only specifies the ability to 'read files'."
+                "hallucination_details": "The summary claims the vulnerability allows the attacker to 'execute arbitrary commands', whereas the ground truth specifies it allows the attacker to 'read files'."
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability allows for 'the execution of malicious code', which is not supported by the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
@@ -1854,8 +1854,8 @@
             },
             {
                 "model": "smollm2:360m",
-                "has_hallucination": false,
-                "hallucination_details": "None"
+                "has_hallucination": true,
+                "hallucination_details": "The summary claims the vulnerability allows attackers to read files 'from the webpage', whereas the ground truth refers to reading files on the system."
             }
         ]
     },
@@ -1884,8 +1884,8 @@
             },
             {
                 "model": "smollm2:360m",
-                "has_hallucination": false,
-                "hallucination_details": "None"
+                "has_hallucination": true,
+                "hallucination_details": "The summary states that attackers are 'allocating large chunks of linefeed characters', whereas the ground truth states that the Apache server is the one allocating memory due to the linefeeds."
             }
         ]
     },
@@ -1895,27 +1895,27 @@
             {
                 "model": "llama3.2:3b",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability allows the attacker to 'execute unauthorized code on the compromised system' and 'gain control over user sessions'. XSS typically executes in the victim's browser, not on the server/device itself, and these specific impacts are not mentioned in the ground truth."
+                "hallucination_details": "The summary claims the vulnerability could lead to 'unauthorized code execution on the affected system', which is a mischaracterization of an XSS vulnerability (which executes in the victim's browser, not on the server/device itself)."
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'redirection to a phishing site' and 'compromise the security of the device and the network it protects'. These specific impacts are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability leads to 'system compromise'. XSS is a client-side vulnerability, and system compromise is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability allows an attacker to 'execute arbitrary code on the affected system'. XSS is a client-side vulnerability, and this impact is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability allows attackers to 'inject malicious code into websites' and leads to 'data breaches'. The ground truth specifies injecting into a 'blocked URL', and 'data breaches' is an unsubstantiated impact."
+                "hallucination_details": "The summary claims the vulnerability enables attackers to 'inject malicious code into websites', which is incorrect; the vulnerability involves injecting scripts via a blocked URL on the device's interface, not injecting code into arbitrary websites."
             }
         ]
     },
@@ -1934,8 +1934,8 @@
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": false,
-                "hallucination_details": "None"
+                "has_hallucination": true,
+                "hallucination_details": "The model incorrectly identifies the software as 'Apache HTTP Server 1.6' instead of 'fnord 1.6' and refers to 'fnord' as a function rather than the software name."
             },
             {
                 "model": "llama3:8b",
@@ -1944,8 +1944,8 @@
             },
             {
                 "model": "smollm2:360m",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the request 'exceeds the buffer size limit', which is a technical explanation not present in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             }
         ]
     },
@@ -1955,7 +1955,7 @@
             {
                 "model": "llama3.2:3b",
                 "has_hallucination": true,
-                "hallucination_details": "The model incorrectly identifies the vulnerability as 'Remote Code Execution (RCE)' and adds speculative impacts like 'lateral movement' and 'escalation of privileges' which are not in the ground truth."
+                "hallucination_details": "The summary incorrectly identifies the vulnerability as a 'remote code execution (RCE) vulnerability'."
             },
             {
                 "model": "gemma3:4b",
@@ -1984,28 +1984,28 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could enable an attacker to 'intercept and redirect traffic intended for other systems or networks within the same subnet', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'data breaches, or disruption of network services', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'man-in-the-middle attacks or denial of service conditions', which are not mentioned in the ground truth."
+                "hallucination_details": "The summary adds specific version constraints (Windows Server 2003, Internet Explorer for Windows XP/Server 2003 SP1, and Remote Desktop Services) which are not present in the ground truth."
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could enable attackers to 'spoof IP addresses' and lead to 'data exfiltration', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the attacker can 'reach any destination on the network without being routed through the intended gateway' and 'steal sensitive data', which are not mentioned in the ground truth."
+                "hallucination_details": "The summary incorrectly describes the mechanism as 'spoofing a legitimate IP address in a packet header' and claims it enables the attacker to 'reach any destination on the internet without being routed through their own network', which contradicts the ground truth regarding IP source routing restrictions."
             }
         ]
     },
@@ -2024,18 +2024,18 @@
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'unauthorized access, data breaches, system crashes, or other security compromises', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability allows an attacker to 'manipulate the analyzer's memory usage' and 'code execution with elevated privileges', neither of which are mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability leads to a denial of service 'when they are called with invalid arguments', which is not mentioned in the ground truth."
+                "hallucination_details": "The summary states 'These vulnerabilities are not properly used by Ethereal's disassemblers', which is incorrect; the ground truth specifies the vulnerabilities are in the 'dissectors', not 'disassemblers'."
             }
         ]
     },
@@ -2044,8 +2044,8 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'further exploitation of the underlying operating system', which is an extrapolation not present in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
@@ -2054,8 +2054,8 @@
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary incorrectly states the affected versions are 'up to MDaemon 6.7.4', whereas the ground truth specifies '6.7.5 and earlier'."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
@@ -2065,7 +2065,7 @@
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary falsely claims the vulnerability was 'discovered by Hugging Face'."
+                "hallucination_details": "The summary incorrectly states that the user can cause a denial of service 'by executing arbitrary code', whereas the ground truth states that the buffer overflow allows for either a denial of service OR the execution of arbitrary code."
             }
         ]
     },
@@ -2074,28 +2074,28 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'taking control of the application' and 'code injection', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability leads to 'account takeover', 'website defacement', and 'execute arbitrary code', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'unauthorized access with elevated privileges', 'data theft', or 'website defacement', which are not mentioned in the ground truth."
+                "hallucination_details": "The summary claims the vulnerability could lead to 'unauthorized script execution on the server', whereas the ground truth specifies XSS (client-side script injection)."
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'unauthorized access' or 'data theft', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'unauthorized access to sensitive information', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             }
         ]
     },
@@ -2104,28 +2104,28 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary mentions 'lateral movement within the network', which is not present in or logically deduced from the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary mentions 'intellectual property theft', which is not present in or logically deduced from the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary mentions 'system compromise', which is not present in or logically deduced from the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary mentions 'compromising... integrity, and availability', which is not present in or logically deduced from the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
-                "has_hallucination": true,
-                "hallucination_details": "The summary mentions 'bypassing the server's secure file system features' and 'network' compromise, which are not present in or logically deduced from the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             }
         ]
     },
@@ -2135,27 +2135,27 @@
             {
                 "model": "llama3.2:3b",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the attack can be performed 'remotely', which is not present in the ground truth."
+                "hallucination_details": "Claims the vulnerability could lead to unauthorized access or privilege escalation, which is not supported by the ground truth of simply disabling input devices."
             },
             {
                 "model": "gemma3:4b",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the attack can be performed 'remotely', which is not present in the ground truth."
+                "hallucination_details": "Claims the vulnerability can be exploited 'remotely', whereas the ground truth implies local interaction by a Windows NT user."
             },
             {
                 "model": "phi4-mini",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability allows 'remotely execute arbitrary code', 'Keyboard and Mouse Device Interface (KMDF) controls', 'full system compromise', 'data theft', and 'unauthorized access', none of which are in the ground truth."
+                "hallucination_details": "Claims the vulnerability can be exploited 'remotely'."
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could 'facilitate further attacks' and implies it is an 'unauthorized control' issue, whereas the ground truth only specifies the ability to disable the devices."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability allows 'unauthorized access to the system's input and output capabilities' and 'gain unauthorized access to sensitive data', which are not in the ground truth."
+                "hallucination_details": "Claims the vulnerability allows 'unauthorized access', which is a fabrication not present in the ground truth."
             }
         ]
     },
@@ -2164,28 +2164,28 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "Identifies the vulnerability as 'Directory Traversal' or 'Command Injection', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "Identifies the vulnerability as a 'race condition', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "Describes the vulnerability as 'crafted input', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
                 "has_hallucination": true,
-                "hallucination_details": "Identifies the vulnerability as a 'path traversal flaw', which is not mentioned in the ground truth."
+                "hallucination_details": "The summary incorrectly identifies the vulnerability as a 'path traversal flaw'."
             },
             {
                 "model": "smollm2:360m",
-                "has_hallucination": false,
-                "hallucination_details": "None"
+                "has_hallucination": true,
+                "hallucination_details": "The summary incorrectly identifies the vulnerability as enabling 'remote code execution', whereas the ground truth specifies it is for a 'local user'."
             }
         ]
     },
@@ -2194,28 +2194,28 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the impact includes unauthorized access to sensitive data and modification of system files, which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability enables attackers to 'upload' malicious code and mentions 'data theft' and 'deployment of further attacks', which are not in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary incorrectly identifies the vulnerability as an 'insecure direct object reference' (IDOR) flaw, whereas the ground truth identifies it as a remote file inclusion vulnerability."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the impact includes 'compromise the affected system or steal sensitive data', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the parameter is used to 'pass a URL as an argument to the hit function' and that it allows 'unauthorized access to sensitive data', neither of which are in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             }
         ]
     },
@@ -2225,17 +2225,17 @@
             {
                 "model": "llama3.2:3b",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the attacker creates a symbolic link in the 'DEADJOE' directory, whereas the ground truth states the editor creates a file called 'DEADJOE' which follows symbolic links."
+                "hallucination_details": "The summary states the editor 'creates a symbolic link for its DEADJOE rescue copy', whereas the ground truth states it 'follows symbolic links' when creating the file."
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability allows overwriting files belonging to other users 'running the same Joe session' and mentions 'complete system compromise', neither of which are in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary mentions 'privilege escalation' and 'malicious tampering within the affected environment', which are not supported by the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
@@ -2245,7 +2245,7 @@
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability allows attackers to 'bypass password-protected files' and 'gain unauthorized access to the system', neither of which are mentioned in the ground truth."
+                "hallucination_details": "The summary incorrectly states it overwrites files of users 'whose joe session crashes', implying the victim must also be running a crashing session, rather than the attacker exploiting the editor's behavior to target arbitrary files."
             }
         ]
     },
@@ -2259,23 +2259,23 @@
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability allows the attacker to 'execute arbitrary code' and gain 'root privileges', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability allows the attacker to 'execute arbitrary code', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability allows the attacker to 'inject malicious code', 'elevate their privileges to those of the root user', 'data theft', and 'complete system compromise', none of which are in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability is caused by an 'uninitialized input parameter' and mentions 'compromise system stability or even expose sensitive data', which are not in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             }
         ]
     },
@@ -2284,28 +2284,28 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'modification of system files', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability allows an attacker to 'gain complete control of the server', whereas the ground truth specifies 'UPB administrator privileges' and 'UPB instance'."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'full system compromise', which is an escalation beyond the 'UPB administrator privileges' stated in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'full control over the affected system' and 'data theft, modification, or destruction', which are not supported by the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability is due to a 'flaw in its HTTP request handling mechanism' and 'bypass normal security checks', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             }
         ]
     },
@@ -2315,27 +2315,27 @@
             {
                 "model": "llama3.2:3b",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability leads to 'code injection and execution', 'steal sensitive data', and 'compromise the entire system', which are not mentioned in the ground truth."
+                "hallucination_details": "The summary claims the vulnerability leads to 'code injection and execution', which is not mentioned in the ground truth."
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'complete system compromise' and 'executes malicious code', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability allows 'execute arbitrary code' and 'unauthorized access control changes', which are not mentioned in the ground truth."
+                "hallucination_details": "The summary incorrectly states the keys must be pressed as 'Ctrl+Shift' simultaneously, whereas the ground truth specifies (1) event.ctrlKey OR (2) event.shiftKey."
             },
             {
                 "model": "llama3:8b",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability leads to 'unauthorized code execution', 'data theft', and 'gain control over the affected system', which are not mentioned in the ground truth."
+                "hallucination_details": "The summary claims the vulnerability is an 'unauthenticated remote file upload flaw' and could lead to 'execution of malicious code', neither of which are in the ground truth."
             },
             {
                 "model": "smollm2:360m",
-                "has_hallucination": true,
-                "hallucination_details": "The summary incorrectly describes the trigger as 'when users click on a button with the \"1\" or \"2\" event', whereas the ground truth refers to JavaScript event properties (1) event.ctrlKey or (2) event.shiftKey."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             }
         ]
     },
@@ -2344,13 +2344,13 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could be used for 'data theft or privilege escalation', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the denial-of-service is caused by 'overwhelming the server with requests', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
@@ -2359,8 +2359,8 @@
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability is due to 'lack of proper input validation' and could lead to 'unauthorized access to sensitive files', neither of which are explicitly stated in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
@@ -2374,28 +2374,28 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to a 'system becoming unresponsive' or 'significant disruption to network operations', which are impacts not mentioned in the ground truth (which only specifies a crash of the TCPDUMP process)."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability disrupts 'network monitoring services', which is an impact not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability allows attackers to 'crash systems' and cause 'denial of service for affected devices', whereas the ground truth specifies the crash of the TCPDUMP application itself."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'system crashes or instability' and 'compromising the security of connected devices', which are impacts not present in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary adds the detail 'when the packet is sent over a network', which is not explicitly stated in the ground truth."
+                "hallucination_details": "The summary claims the out-of-bounds read occurs 'on the TCP connection', whereas the ground truth specifies it is caused by the processing of ISAKMP packets (which are typically UDP-based) and does not involve a TCP connection state."
             }
         ]
     },
@@ -2404,28 +2404,28 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The claim that the vulnerability could lead to 'taking control of the affected user's account' is an extrapolation not present in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The claim of 'complete account takeover' is an extrapolation not present in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The claim of 'data breaches' is an extrapolation not present in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The claim that the vulnerability is 'unpatched' is a hallucination, as the ground truth does not mention the patch status."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
-                "has_hallucination": false,
-                "hallucination_details": "None"
+                "has_hallucination": true,
+                "hallucination_details": "The summary claims the vulnerability involves 'downloading and executing malicious code', which is a mischaracterization of XSS (which involves script execution in the browser context, not downloading/executing files)."
             }
         ]
     },
@@ -2434,38 +2434,8 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could enable attackers to gain unauthorized access and execute actions with 'elevated privileges', which is not mentioned in the ground truth."
-            },
-            {
-                "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary mentions 'system instability' and 'potential security breach', which are not explicitly stated in the ground truth."
-            },
-            {
-                "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary incorrectly identifies the vulnerability as affecting the 'Kerberos' negotiation process, which is not mentioned in the ground truth."
-            },
-            {
-                "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary mentions 'data breaches or other malicious activities', which are not mentioned in the ground truth."
-            },
-            {
-                "model": "smollm2:360m",
-                "has_hallucination": true,
-                "hallucination_details": "The summary mentions 'data breaches and other security threats', which are not mentioned in the ground truth."
-            }
-        ]
-    },
-    "83": {
-        "cve_id": "CVE-2002-1873",
-        "hallucination_checks": [
-            {
-                "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability can lead to 'data loss', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
@@ -2474,13 +2444,43 @@
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability is caused by 'improper handling and validation mechanisms', which is an assumption not present in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability is 'unauthenticated' and can lead to 'data loss', neither of which are in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
+            },
+            {
+                "model": "smollm2:360m",
+                "has_hallucination": false,
+                "hallucination_details": "None"
+            }
+        ]
+    },
+    "83": {
+        "cve_id": "CVE-2002-1873",
+        "hallucination_checks": [
+            {
+                "model": "llama3.2:3b",
+                "has_hallucination": false,
+                "hallucination_details": "None"
+            },
+            {
+                "model": "gemma3:4b",
+                "has_hallucination": false,
+                "hallucination_details": "None"
+            },
+            {
+                "model": "phi4-mini",
+                "has_hallucination": false,
+                "hallucination_details": "None"
+            },
+            {
+                "model": "llama3:8b",
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
@@ -2504,8 +2504,8 @@
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The model incorrectly specifies 'access rights only and no privileges', 'Windows systems', and 'Remote Code Execution' (as opposed to arbitrary command execution), none of which are in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
@@ -2514,8 +2514,8 @@
             },
             {
                 "model": "smollm2:360m",
-                "has_hallucination": false,
-                "hallucination_details": "None"
+                "has_hallucination": true,
+                "hallucination_details": "The summary claims the vulnerability exists in a 'web application, such as a website or mobile app', which is an assumption not supported by the ground truth regarding the SWAIS software."
             }
         ]
     },
@@ -2525,32 +2525,27 @@
             {
                 "model": "llama3.2:3b",
                 "has_hallucination": true,
-                "hallucination_details": "Claims the vulnerability relates to 'removable media' when the ground truth explicitly states 'non-removable media'."
+                "hallucination_details": "The summary states the vulnerability applies to 'removable drive', whereas the ground truth explicitly states it applies to 'non-removable media'."
             },
             {
                 "model": "gemma3:4b",
                 "has_hallucination": true,
-                "hallucination_details": "Claims the vulnerability involves 'removable media' (contradicts ground truth 'non-removable media') and mentions 'data theft' and 'data exfiltration' which are not in the ground truth."
+                "hallucination_details": "The summary implies the vulnerability applies to a 'drive' generally without specifying the ground truth's critical distinction of 'non-removable media', and implies it is a bypass of intended functionality rather than the specific execution behavior on non-removable media."
             },
             {
                 "model": "phi4-mini",
                 "has_hallucination": true,
-                "hallucination_details": "Claims the vulnerability involves 'removable drives' and 'insertion of removable drives', which contradicts the ground truth 'non-removable media'."
-            },
-            {
-                "model": "Summary (CVSS/CWE assessment)",
-                "has_hallucination": true,
-                "hallucination_details": "Assigns CWE-434 (SQL injection related) to an Autorun execution issue and claims the vulnerability involves 'removable media' (implied by 'media insertion') which contradicts the ground truth 'non-removable media'."
+                "hallucination_details": "The summary states the vulnerability involves 'removable drives', which contradicts the ground truth of 'non-removable media'."
             },
             {
                 "model": "llama3:8b",
                 "has_hallucination": true,
-                "hallucination_details": "Claims the vulnerability relates to 'removable drive' when the ground truth explicitly states 'non-removable media'."
+                "hallucination_details": "The summary states the vulnerability applies to a 'removable drive', which contradicts the ground truth of 'non-removable media'."
             },
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "Claims the vulnerability allows attackers to 'bypass normal file system permissions' and 'install malware', neither of which are mentioned in the ground truth."
+                "hallucination_details": "The summary identifies 'USB drives or CDs' as examples of 'non-removable media', which is factually incorrect."
             }
         ]
     },
@@ -2559,23 +2554,23 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'privilege escalation', which is not mentioned or logically deduced from the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could allow for 'further attacks targeting the underlying server infrastructure', which is not mentioned or logically deduced from the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability allows attackers to 'bypass server-side restrictions' and 'lead to unauthorized access', which are not mentioned or logically deduced from the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could allow attackers to 'map out the file system and identify sensitive files or directories, leading to unauthorized access or data theft', which are not mentioned or logically deduced from the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
@@ -2589,8 +2584,8 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the impact could lead to 'unauthorized access, data tampering, or even complete control over the vulnerable system', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
@@ -2599,13 +2594,13 @@
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'unauthorized access', which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": false,
-                "hallucination_details": "None"
+                "has_hallucination": true,
+                "hallucination_details": "The summary incorrectly lists 'pass_log_in' as a function name, whereas the ground truth specifies 'ftp_log_in' for both the user and pass arguments."
             },
             {
                 "model": "smollm2:360m",
@@ -2649,8 +2644,8 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary includes specific impacts such as 'data centers, networks, and public safety systems' which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
@@ -2670,7 +2665,7 @@
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability is due to a 'lack of authentication', which is not mentioned in the ground truth."
+                "hallucination_details": "The summary claims the vulnerability exploits the 'lack of interactive prompts', whereas the ground truth states it requires access to an 'interactive prompt'."
             }
         ]
     },
@@ -2679,28 +2674,28 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability allows execution of malicious scripts or binaries with 'root-level access', 'unauthorized changes to system files', and 'data tampering', which are not mentioned in the ground truth."
-            },
-            {
-                "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability introduces an unintended path entry '/etc/PATH' (the ground truth says it adds 'bin' to /etc/PATH) and mentions 'complete system compromise', which is not in the ground truth."
-            },
-            {
-                "model": "phi4-mini",
                 "has_hallucination": false,
                 "hallucination_details": "None"
             },
             {
-                "model": "llama3:8b",
+                "model": "gemma3:4b",
+                "has_hallucination": false,
+                "hallucination_details": "None"
+            },
+            {
+                "model": "phi4-mini",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the utility adds the '/bin' directory to the PATH, whereas the ground truth states it adds 'bin' to '/etc/PATH'. It also adds speculative impact details like 'control of sensitive systems or data'."
+                "hallucination_details": "Claims the vulnerability adds a 'user's home directory path' to the PATH variable, which contradicts the ground truth stating it adds 'bin' to /etc/PATH."
+            },
+            {
+                "model": "llama3:8b",
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
-                "has_hallucination": true,
-                "hallucination_details": "The summary incorrectly identifies 'bin' as a 'binary file' rather than a directory/path component, and adds speculative impact details about 'sensitive areas of the operating system'."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             }
         ]
     },
@@ -2709,18 +2704,18 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could result in 'unauthorized access, data tampering, or even complete control', which are impacts not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'data theft, or denial of service', which are impacts not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'full system compromise or data theft', which are impacts not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
@@ -2730,7 +2725,7 @@
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability was 'discovered by Hugging Face' and could lead to 'unauthorized access or data exfiltration', none of which are in the ground truth."
+                "hallucination_details": "The summary claims the attacker can 'inject malicious code into the server's response payload', whereas the ground truth specifies a buffer overflow via a POST request body, which is an input vector, not a response payload injection."
             }
         ]
     },
@@ -2739,28 +2734,28 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary mentions 'data theft' and 'system compromise' as specific impacts, which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary mentions 'system instability', 'data corruption', and 'malicious software installation and execution' as impacts, which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary explicitly mentions 'privilege escalation attacks', which is not stated in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary mentions 'data theft' as a potential impact, which is not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
-                "has_hallucination": true,
-                "hallucination_details": "The summary mentions 'compromising the confidentiality of sensitive data', which is an inference not present in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             }
         ]
     },
@@ -2769,13 +2764,13 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'unauthorized access' and 'data tampering', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'system instability' and a 'significant security breach', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
@@ -2784,13 +2779,13 @@
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'unauthorized code execution with significant consequences', which adds speculative impact not present in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'unauthorized access or data exfiltration', which are not mentioned in the ground truth."
+                "hallucination_details": "The summary states the vulnerability allows attackers to cause a denial of service 'by executing arbitrary code', which misrepresents the relationship between the two impacts (DoS and RCE are distinct outcomes of the vulnerability, not one causing the other)."
             }
         ]
     },
@@ -2799,28 +2794,28 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could allow an attacker to 'take control of the system', which is not supported by the ground truth regarding SQL injection in the IMAP daemon."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'modification, or deletion' of data and 'compromising the entire system', which are speculative impacts not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary mentions 'email addresses' as an input field and 'loss and compromise of confidential communications', neither of which are specified in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'manipulate the underlying database structure' and 'significant data breaches', which are not stated in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability exploits 'default login credentials' and mentions 'command-and-control over the attacker's compromised system', both of which are fabrications."
+                "hallucination_details": "The summary claims the vulnerability is caused by 'missing parameter validation in the database connection string', which is not mentioned in the ground truth and is a technical fabrication regarding the root cause."
             }
         ]
     },
@@ -2829,28 +2824,28 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'unauthorized access, data theft, or compromise of the system' and 'spreading malware', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability leads to 'theft of user data', 'redirection to malicious websites', and 'compromise of the overall ScozBook system', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'unauthorized access or data theft', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'steal sensitive information, take control of users' sessions, or perform other malicious actions', which are not mentioned in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary incorrectly lists 'mailto' as a variable instead of 'msn' and claims it leads to 'unauthorized access to sensitive information', which is not mentioned in the ground truth."
+                "hallucination_details": "The model incorrectly lists 'mailto' as a vulnerable variable instead of 'msn'."
             }
         ]
     },
@@ -2859,8 +2854,8 @@
         "hallucination_checks": [
             {
                 "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary mentions 'meeting details' and 'physical access', which are not present in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "gemma3:4b",
@@ -2869,8 +2864,8 @@
             },
             {
                 "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary mentions 'usernames', which is not explicitly stated in the ground truth."
+                "has_hallucination": false,
+                "hallucination_details": "None"
             },
             {
                 "model": "llama3:8b",
@@ -2880,128 +2875,24 @@
             {
                 "model": "smollm2:360m",
                 "has_hallucination": true,
-                "hallucination_details": "The summary mentions 'intercept' (implying network interception) and 'user authentication tokens', which are not present in the ground truth."
+                "hallucination_details": "The model claims the vulnerability allows attackers to 'intercept' data, whereas the ground truth specifies the vulnerability is that the software 'stores' data in plaintext in memory, which is a local access issue, not an interception issue."
             }
         ]
     },
     "97": {
         "cve_id": "CVE-2002-0049",
-        "hallucination_checks": [
-            {
-                "model": "llama3.2:3b",
-                "has_hallucination": false,
-                "hallucination_details": "None"
-            },
-            {
-                "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary mentions 'data theft' and 'denial of service' as potential impacts, which are not mentioned in the ground truth."
-            },
-            {
-                "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary mentions 'misconfigured service account' and 'data breaches', which are not present in the ground truth."
-            },
-            {
-                "model": "llama3:8b",
-                "has_hallucination": false,
-                "hallucination_details": "None"
-            },
-            {
-                "model": "smollm2:360m",
-                "has_hallucination": true,
-                "hallucination_details": "The summary mentions 'data breaches', which is not present in the ground truth."
-            }
-        ]
+        "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 26.146735829s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-3.1-flash-lite\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 500\n}\n, retry_delay {\n  seconds: 26\n}\n]"
     },
     "98": {
         "cve_id": "CVE-2003-1562",
-        "hallucination_checks": [
-            {
-                "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary explicitly mentions 'brute-force attacks', which is not mentioned in the ground truth."
-            },
-            {
-                "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary mentions 'brute-force' and 'unauthorized root access and system compromise', which are not mentioned in the ground truth."
-            },
-            {
-                "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "The summary mentions 'password guessing attacks', which is not mentioned in the ground truth."
-            },
-            {
-                "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary mentions 'brute-force', 'guess passwords', and 'unauthorized access to sensitive systems and data', none of which are in the ground truth."
-            },
-            {
-                "model": "smollm2:360m",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability allows attackers to 'bypass the timing difference', whereas the ground truth states the vulnerability is the *lack* of a delay that creates the timing difference."
-            }
-        ]
+        "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 22.072003041s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-3.1-flash-lite\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 500\n}\n, retry_delay {\n  seconds: 22\n}\n]"
     },
     "99": {
         "cve_id": "CVE-2003-1392",
-        "hallucination_checks": [
-            {
-                "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "Mentions 'bypass encryption' and 'unauthorized access' as general concepts, but fails to specify the affected versions (1.0 and 1.2) which are critical context from the ground truth."
-            },
-            {
-                "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "Fails to specify the affected versions (1.0 and 1.2) and implies the flaw is a 'version flaw' rather than the specific encryption implementation issue described."
-            },
-            {
-                "model": "phi4-mini",
-                "has_hallucination": true,
-                "hallucination_details": "Introduces the technical detail 'encryption key derivation' and 'exploiting locally stored keys', which are not mentioned in the ground truth."
-            },
-            {
-                "model": "llama3:8b",
-                "has_hallucination": false,
-                "hallucination_details": "None"
-            },
-            {
-                "model": "smollm2:360m",
-                "has_hallucination": false,
-                "hallucination_details": "None"
-            }
-        ]
+        "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 17.975379949s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-3.1-flash-lite\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 500\n}\n, retry_delay {\n  seconds: 17\n}\n]"
     },
     "100": {
         "cve_id": "CVE-2003-1445",
-        "hallucination_checks": [
-            {
-                "model": "llama3.2:3b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could enable an attacker to 'gain unauthorized access to the system or escalate privileges', which is not mentioned in the ground truth."
-            },
-            {
-                "model": "gemma3:4b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to a 'complete compromise of the system', which is not mentioned in the ground truth."
-            },
-            {
-                "model": "phi4-mini",
-                "has_hallucination": false,
-                "hallucination_details": "None"
-            },
-            {
-                "model": "llama3:8b",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability could lead to 'data theft', which is not mentioned in the ground truth."
-            },
-            {
-                "model": "smollm2:360m",
-                "has_hallucination": true,
-                "hallucination_details": "The summary claims the vulnerability was 'discovered by Hugging Face' and refers to Far Manager as an 'operating system', both of which are false."
-            }
-        ]
+        "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 13.889994452s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-3.1-flash-lite\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 500\n}\n, retry_delay {\n  seconds: 13\n}\n]"
     }
 }
