@@ -6,14 +6,6 @@ Created on Thu Apr  2 10:16:23 2026
 @author: localadmin
 """
 
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Mar  3 06:12:22 2026
-
-@author: localadmin
-"""
-
 import json
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -54,7 +46,17 @@ def generate_evaluation_plots(json_file='experiment_2_results.json'):
     
     sns.set_style("white")
     models = summary_df['model'].unique()
-    palette = sns.color_palette("bright", len(models))
+    
+    # Custom Palette: Make the non-AI baseline black, and use bright colors for SLMs
+    palette = {}
+    slm_colors = sns.color_palette("bright", len([m for m in models if m != "textrank-baseline"]))
+    slm_idx = 0
+    for m in models:
+        if m == "textrank-baseline":
+            palette[m] = "black"
+        else:
+            palette[m] = slm_colors[slm_idx]
+            slm_idx += 1
     
     #Accuracy vs. Number of CVEs (k)
     plt.figure(figsize=(10, 6))
@@ -62,7 +64,9 @@ def generate_evaluation_plots(json_file='experiment_2_results.json'):
     plt.xlabel('Number of CVEs (k)', fontsize=16)
     plt.ylabel('Accuracy (%)', fontsize=16)
     plt.ylim(-5, 105) # Keep percentage scale fixed from 0 to 100
-    plt.legend(title='Model', bbox_to_anchor=(1.05, 1), loc='upper left', fontsize = 16)
+    plt.xticks(fontsize=14)
+    plt.yticks(fontsize=14)
+    plt.legend(title='Model', bbox_to_anchor=(1.05, 1), loc='upper left', fontsize=14, title_fontsize=16)
     plt.tight_layout()
     plt.savefig('plot_1_accuracy_vs_k.png', dpi=300)
     plt.close()
@@ -72,17 +76,21 @@ def generate_evaluation_plots(json_file='experiment_2_results.json'):
     sns.lineplot(data=summary_df, x='k', y='avg_total_time', hue='model', marker='s', linewidth=2.5, palette=palette)
     plt.xlabel('Number of CVEs (k)', fontsize=16)
     plt.ylabel('Total Time (Seconds)', fontsize=16)
-    plt.legend(title='Model', bbox_to_anchor=(1.05, 1), loc='upper left', fontsize = 16)
+    plt.xticks(fontsize=14)
+    plt.yticks(fontsize=14)
+    plt.legend(title='Model', bbox_to_anchor=(1.05, 1), loc='upper left', fontsize=14, title_fontsize=16)
     plt.tight_layout()
     plt.savefig('plot_2_total_time_vs_k.png', dpi=300)
     plt.close()
 
-    #tokens Per Second vs. Number of CVEs (k)
+    #Tokens Per Second vs. Number of CVEs (k)
     plt.figure(figsize=(10, 6))
     sns.lineplot(data=summary_df, x='k', y='avg_tokens_per_sec', hue='model', marker='^', linewidth=2.5, palette=palette)
     plt.xlabel('Number of CVEs (k)', fontsize=16)
     plt.ylabel('Tokens Per Second', fontsize=16)
-    plt.legend(title='Model', bbox_to_anchor=(1.05, 1), loc='upper left', fontsize = 16)
+    plt.xticks(fontsize=14)
+    plt.yticks(fontsize=14)
+    plt.legend(title='Model', bbox_to_anchor=(1.05, 1), loc='upper left', fontsize=14, title_fontsize=16)
     plt.tight_layout()
     plt.savefig('plot_3_tokens_per_sec_vs_k.png', dpi=300)
     plt.close()

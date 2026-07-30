@@ -12,7 +12,7 @@ import os
 import google.generativeai as genai
 
 
-API_KEY = "" 
+API_KEY = "AIzaSyCihTAKvX-PJpGJgBINeIQQBf1jdfSHieY" 
 if not API_KEY:
     print("ERROR: Please set the GEMINI_API_KEY environment variable.")
     exit()
@@ -51,7 +51,7 @@ def run_gemini_judge():
         for slm_name, slm_summary in model_responses.items():
             responses_text += f"\nModel: {slm_name}\nSummary: {slm_summary}\n"
 
-        prompt = f"""You are an expert cybersecurity peer-reviewer.
+        prompt = f"""You are an expert cybersecurity peer-reviewer and technical communicator.
             Your task is to evaluate 5 different AI-generated summaries of a vulnerability.
             
             GROUND TRUTH DESCRIPTION:
@@ -61,7 +61,8 @@ def run_gemini_judge():
             {responses_text}
             
             EVALUATION CRITERIA:
-            For each model, provide a score from 1 to 10 based on how accurately and concisely it captured the core vulnerability mechanism and impact from the ground truth.
+            1. Accuracy (score 1-10): How accurately and concisely it captured the core vulnerability mechanism and impact from the ground truth.
+            2. Explainability (score 1-10): How clearly it breaks down the threat for a non-expert, Small and Medium Enterprise (SME) audience without relying on overly dense, unexplained jargon.
             
             Respond strictly in the following JSON format:
             {{
@@ -69,7 +70,9 @@ def run_gemini_judge():
                     {{
                         "model": "model_name",
                         "score": integer,
-                        "rationale": "1-sentence explanation of the score"
+                        "rationale": "1-sentence explanation of the accuracy score",
+                        "explainability_score": integer,
+                        "explainability_rationale": "1-sentence explanation of the explainability score"
                     }},
                     ...
                 ]

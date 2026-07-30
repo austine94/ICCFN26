@@ -1,0 +1,2218 @@
+{
+    "3": [
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-200",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-200",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 0.6316530704498291,
+                "overall_tokens_per_sec": 18.997770392304513
+            }
+        },
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-200",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-200",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 0.9672069549560547,
+                "overall_tokens_per_sec": 15.50857334424516
+            }
+        },
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-200",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-200",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.8600399494171143,
+                "overall_tokens_per_sec": 6.9890971987315895
+            }
+        },
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-200",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-200",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 3.073392868041992,
+                "overall_tokens_per_sec": 3.9044796793730447
+            }
+        },
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-200",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-ID",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.7263531684875488,
+                "overall_tokens_per_sec": 23.404592610779552
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-476",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-476",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 0.6280429363250732,
+                "overall_tokens_per_sec": 19.106973912033354
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-476",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-476",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 0.9861330986022949,
+                "overall_tokens_per_sec": 15.210928444913158
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-476",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-476",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.5359888076782227,
+                "overall_tokens_per_sec": 8.463603338132783
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-476",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-476",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 3.1335301399230957,
+                "overall_tokens_per_sec": 3.829546697864061
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-476",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-ID",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.7429409027099609,
+                "overall_tokens_per_sec": 22.882035351655265
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-307",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-307",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 0.6309020519256592,
+                "overall_tokens_per_sec": 19.020385119010502
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-307",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-307",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 0.9856069087982178,
+                "overall_tokens_per_sec": 15.219049162601735
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-307",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-307",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.543623924255371,
+                "overall_tokens_per_sec": 8.421740422474388
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-307",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-307",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 3.130944013595581,
+                "overall_tokens_per_sec": 3.8327098625501073
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-307",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-ID",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.7264842987060547,
+                "overall_tokens_per_sec": 23.40036808817313
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-178",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-178",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 0.6040980815887451,
+                "overall_tokens_per_sec": 19.86432396613585
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-178",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-178",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 0.9224050045013428,
+                "overall_tokens_per_sec": 16.261837183016024
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-178",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-178: Improper Handling of Case Sensitivity",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.5974171161651611,
+                "overall_tokens_per_sec": 13.146221977647043
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-178",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-178",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 3.0575499534606934,
+                "overall_tokens_per_sec": 3.9247110211291165
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-178",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-ID",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.7238450050354004,
+                "overall_tokens_per_sec": 23.485690834004714
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-190",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-190",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 0.7260527610778809,
+                "overall_tokens_per_sec": 16.52772448958817
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-190",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-190",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.0848100185394287,
+                "overall_tokens_per_sec": 13.827305927904101
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-190",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-190: Integer Overflow or Wraparound",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 2.0392589569091797,
+                "overall_tokens_per_sec": 9.31710999018855
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-190",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-190",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 3.3157968521118164,
+                "overall_tokens_per_sec": 3.6190395658157564
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-190",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-ID",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.752899169921875,
+                "overall_tokens_per_sec": 22.579384702687367
+            }
+        }
+    ],
+    "4": [
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-287",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-200",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.7164359092712402,
+                "overall_tokens_per_sec": 16.749579194329357
+            }
+        },
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-287",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-287",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.0898480415344238,
+                "overall_tokens_per_sec": 13.76338666341147
+            }
+        },
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-287",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-287",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.9309611320495605,
+                "overall_tokens_per_sec": 6.732398588573112
+            }
+        },
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-287",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-287",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 3.5324020385742188,
+                "overall_tokens_per_sec": 3.397121808038462
+            }
+        },
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-287",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-ID",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.738379716873169,
+                "overall_tokens_per_sec": 23.023384325872644
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-16",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-16",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 0.630530834197998,
+                "overall_tokens_per_sec": 19.03158315051058
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-16",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-16",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 0.9838039875030518,
+                "overall_tokens_per_sec": 14.230476983055095
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-16",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-16",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.8619890213012695,
+                "overall_tokens_per_sec": 6.981781230329071
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-16",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-16",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 3.38806414604187,
+                "overall_tokens_per_sec": 3.5418455739744727
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-16",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-ID",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.7254502773284912,
+                "overall_tokens_per_sec": 23.433721829431775
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-269",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-269",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 0.7195849418640137,
+                "overall_tokens_per_sec": 16.676280035703897
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-269",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-269",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.087540864944458,
+                "overall_tokens_per_sec": 13.792585164849017
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-269",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-269",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.898756980895996,
+                "overall_tokens_per_sec": 6.846584439608216
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-269",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-269",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 3.5205559730529785,
+                "overall_tokens_per_sec": 3.4085525388178284
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-269",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-ID",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.7422080039978027,
+                "overall_tokens_per_sec": 22.904630384517287
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-203",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-203: Observable Discrepancy",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 0.8453261852264404,
+                "overall_tokens_per_sec": 21.2935554518263
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-203",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-20",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 1.1590468883514404,
+                "overall_tokens_per_sec": 12.078890112817412
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-203",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-203",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 2.0091230869293213,
+                "overall_tokens_per_sec": 6.470484603244881
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-203",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-203",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 3.715893030166626,
+                "overall_tokens_per_sec": 3.229371756016858
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-203",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-ID",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.7498257160186768,
+                "overall_tokens_per_sec": 22.671935140160706
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-120",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-120",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 0.698962926864624,
+                "overall_tokens_per_sec": 17.168292535670027
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-120",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-120",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.0596139430999756,
+                "overall_tokens_per_sec": 14.156099112962254
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-120",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-120",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 2.1801469326019287,
+                "overall_tokens_per_sec": 5.9629008511297705
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-120",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-120",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 3.5238640308380127,
+                "overall_tokens_per_sec": 3.4053527306915616
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-120",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-ID",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.741041898727417,
+                "overall_tokens_per_sec": 22.940673164626602
+            }
+        }
+    ],
+    "5": [
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-787",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-125",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.8417129516601562,
+                "overall_tokens_per_sec": 14.256641740312713
+            }
+        },
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-787",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-125",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 1.2597877979278564,
+                "overall_tokens_per_sec": 11.906767175132615
+            }
+        },
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-787",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-122",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 2.0514729022979736,
+                "overall_tokens_per_sec": 6.336910414677155
+            }
+        },
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-787",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-125",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 3.794754981994629,
+                "overall_tokens_per_sec": 3.1622595021121667
+            }
+        },
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-787",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-16: Configuration",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.7705519199371338,
+                "overall_tokens_per_sec": 25.955421669226027
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-667",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-667: Improper Locking",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 0.8327088356018066,
+                "overall_tokens_per_sec": 20.415299169623843
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-667",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-667",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.1588969230651855,
+                "overall_tokens_per_sec": 12.943342674796524
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-667",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-88",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 1.964158296585083,
+                "overall_tokens_per_sec": 6.618611148908928
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-667",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-667",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 3.6729648113250732,
+                "overall_tokens_per_sec": 3.267115427569488
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-667",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-ID",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.7517228126525879,
+                "overall_tokens_per_sec": 22.614718768494562
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-264",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-264",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 0.7857677936553955,
+                "overall_tokens_per_sec": 15.271687255309795
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-264",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-264",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.194443941116333,
+                "overall_tokens_per_sec": 12.558144826772638
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-264",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-264: Permissions, Privileges, and Access Controls",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 2.1344709396362305,
+                "overall_tokens_per_sec": 10.307003759793222
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-264",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-264",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 3.7238690853118896,
+                "overall_tokens_per_sec": 3.2224548514156344
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-264",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-ID",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.7490417957305908,
+                "overall_tokens_per_sec": 22.69566277462362
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-276",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-276",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 0.750687837600708,
+                "overall_tokens_per_sec": 15.985339576505591
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-276",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-178",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 1.128330945968628,
+                "overall_tokens_per_sec": 13.293971997837113
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-276",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-276",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.999809980392456,
+                "overall_tokens_per_sec": 6.500617622404701
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-276",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-276",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 3.651916027069092,
+                "overall_tokens_per_sec": 3.2859463117586545
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-276",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-ID",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.7440550327301025,
+                "overall_tokens_per_sec": 22.84777234504179
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-352",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-352",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 0.9054000377655029,
+                "overall_tokens_per_sec": 13.253809917675285
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-352",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-352",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.3339710235595703,
+                "overall_tokens_per_sec": 11.244622060810569
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-352",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-352",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 2.1394031047821045,
+                "overall_tokens_per_sec": 6.076461219927057
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-352",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-352",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 4.005354881286621,
+                "overall_tokens_per_sec": 2.995989208363304
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-352",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-ID",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.7700421810150146,
+                "overall_tokens_per_sec": 22.07671270370126
+            }
+        }
+    ],
+    "6": [
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-20",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-200",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.8383901119232178,
+                "overall_tokens_per_sec": 14.313145908260658
+            }
+        },
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-20",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-20",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.1875174045562744,
+                "overall_tokens_per_sec": 11.789300894694014
+            }
+        },
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-20",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-20",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 2.060515880584717,
+                "overall_tokens_per_sec": 7.765045710523545
+            }
+        },
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-20",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-20",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 3.776616096496582,
+                "overall_tokens_per_sec": 3.177447665684613
+            }
+        },
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-20",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-ID",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.7575547695159912,
+                "overall_tokens_per_sec": 22.44062170034446
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-178",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-178",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 0.8405418395996094,
+                "overall_tokens_per_sec": 14.276505266788599
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-178",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-178",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.2831780910491943,
+                "overall_tokens_per_sec": 11.689725771217935
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-178",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-178",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 2.0850019454956055,
+                "overall_tokens_per_sec": 6.235006172576926
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-178",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-178",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 4.066293954849243,
+                "overall_tokens_per_sec": 2.9510901408614214
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-178",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-ID",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.7434699535369873,
+                "overall_tokens_per_sec": 22.865752568915696
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-476",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-476",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 0.9347720146179199,
+                "overall_tokens_per_sec": 12.837354790627636
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-476",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-476",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 2.772406816482544,
+                "overall_tokens_per_sec": 5.410461376310948
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-476",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-476: NULL Pointer Dereference",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.9884347915649414,
+                "overall_tokens_per_sec": 9.05234613493843
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-476",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-476",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 2.809980869293213,
+                "overall_tokens_per_sec": 4.27049170730416
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-476",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-ID",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.5088231563568115,
+                "overall_tokens_per_sec": 33.410429119854705
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-307",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-307",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 0.8470561504364014,
+                "overall_tokens_per_sec": 14.166711373050804
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-307",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-307",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.2724390029907227,
+                "overall_tokens_per_sec": 11.788384327063389
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-307",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-307",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.8357932567596436,
+                "overall_tokens_per_sec": 7.081407425445218
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-307",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-307",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 2.6146059036254883,
+                "overall_tokens_per_sec": 4.589601814698136
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-307",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-ID",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.5042102336883545,
+                "overall_tokens_per_sec": 33.71609472430397
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-59",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-59",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 0.8506450653076172,
+                "overall_tokens_per_sec": 14.10694129596868
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-59",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-59",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.261868953704834,
+                "overall_tokens_per_sec": 11.094654447988555
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-59",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-59",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.8411369323730469,
+                "overall_tokens_per_sec": 7.060854503224951
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-59",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-59",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 2.6156201362609863,
+                "overall_tokens_per_sec": 4.587822151099482
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-59",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-ID",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.5052359104156494,
+                "overall_tokens_per_sec": 33.64764786021321
+            }
+        }
+    ],
+    "7": [
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-310",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-326: Inadequate Path Con constraint handling",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 1.255640983581543,
+                "overall_tokens_per_sec": 15.928119790222803
+            }
+        },
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-310",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-787",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 1.5993080139160156,
+                "overall_tokens_per_sec": 9.379056360301396
+            }
+        },
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-310",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-20: Improper Input Validation",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 2.3180060386657715,
+                "overall_tokens_per_sec": 9.059510480001794
+            }
+        },
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-310",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-310",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 3.2775371074676514,
+                "overall_tokens_per_sec": 3.6612857784764037
+            }
+        },
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-310",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-ID",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.5471329689025879,
+                "overall_tokens_per_sec": 31.07105761529552
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-94",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-476",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 1.1086230278015137,
+                "overall_tokens_per_sec": 10.824238446315643
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-94",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-120",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 1.58540678024292,
+                "overall_tokens_per_sec": 9.461294216050762
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-94",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-94: Improper Control of Generation of Code ('Code Injection')",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 2.314789056777954,
+                "overall_tokens_per_sec": 12.096134599398141
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-94",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-94",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 3.1322009563446045,
+                "overall_tokens_per_sec": 3.8311718077005024
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-94",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-ID",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.5419027805328369,
+                "overall_tokens_per_sec": 31.370940712436287
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-200",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-200",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 0.8635411262512207,
+                "overall_tokens_per_sec": 13.896269251348858
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-200",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-200",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.3040461540222168,
+                "overall_tokens_per_sec": 11.502660357329997
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-200",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-200",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.850320816040039,
+                "overall_tokens_per_sec": 7.02580865291346
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-200",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-200",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 2.642518997192383,
+                "overall_tokens_per_sec": 4.541121563458855
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-200",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-125: Out-of-bounds Read",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.550347089767456,
+                "overall_tokens_per_sec": 47.242913578385696
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-400",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-400",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.0164573192596436,
+                "overall_tokens_per_sec": 11.80570966692476
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-400",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-400",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.4703872203826904,
+                "overall_tokens_per_sec": 10.201394430030495
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-400",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-400",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 2.0146119594573975,
+                "overall_tokens_per_sec": 6.452855568027768
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-400",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-400",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 2.9884297847747803,
+                "overall_tokens_per_sec": 4.015486681713811
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-400",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-ID",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.5139310359954834,
+                "overall_tokens_per_sec": 33.07836812593159
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-79",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-79",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.052994728088379,
+                "overall_tokens_per_sec": 11.396068451154513
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-79",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-79",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.5479350090026855,
+                "overall_tokens_per_sec": 9.044307363407988
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-79",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-79",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 2.0460150241851807,
+                "overall_tokens_per_sec": 6.353814535246245
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-79",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-79",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 3.0481150150299072,
+                "overall_tokens_per_sec": 3.9368593182440197
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-79",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-ID",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.5231742858886719,
+                "overall_tokens_per_sec": 32.493951745207696
+            }
+        }
+    ],
+    "8": [
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-120",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-120",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.041166067123413,
+                "overall_tokens_per_sec": 11.52553889232504
+            }
+        },
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-120",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-120",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.467236042022705,
+                "overall_tokens_per_sec": 10.223303933647426
+            }
+        },
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-120",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-120",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 2.022475004196167,
+                "overall_tokens_per_sec": 6.427767944240602
+            }
+        },
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-120",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-120",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 3.25028395652771,
+                "overall_tokens_per_sec": 3.691985118992386
+            }
+        },
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-120",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-ID",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.5242922306060791,
+                "overall_tokens_per_sec": 32.424665115384386
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-131",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-131",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.052502155303955,
+                "overall_tokens_per_sec": 11.401401830416667
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-131",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-131",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.452470064163208,
+                "overall_tokens_per_sec": 10.32723521819484
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-131",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-131",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 2.3037450313568115,
+                "overall_tokens_per_sec": 5.64298558349729
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-131",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-131",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 3.191807270050049,
+                "overall_tokens_per_sec": 3.759625498882906
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-131",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-ID",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.5273289680480957,
+                "overall_tokens_per_sec": 32.237940697484106
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-287",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-287",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.0009448528289795,
+                "overall_tokens_per_sec": 11.988672468902049
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-287",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-287",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.4633588790893555,
+                "overall_tokens_per_sec": 10.250390532590654
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-287",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-287: Improper Authentication",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 2.115203857421875,
+                "overall_tokens_per_sec": 9.455353407107097
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-287",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-287",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 3.222363233566284,
+                "overall_tokens_per_sec": 3.7239749619161486
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-287",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-ID",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.7823460102081299,
+                "overall_tokens_per_sec": 21.729515812929677
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-476",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-476",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.0904622077941895,
+                "overall_tokens_per_sec": 11.00450791804501
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-476",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-476",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.6016929149627686,
+                "overall_tokens_per_sec": 9.365091060759719
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-476",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 2.307534694671631,
+                "overall_tokens_per_sec": 11.700799152596135
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-476",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-476",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 3.6397030353546143,
+                "overall_tokens_per_sec": 3.2969722758798774
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-476",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-ID",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.5493209362030029,
+                "overall_tokens_per_sec": 30.94730034778359
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-88",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-119",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 1.3001422882080078,
+                "overall_tokens_per_sec": 9.22975901086923
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-88",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-88",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.794062852859497,
+                "overall_tokens_per_sec": 7.803517015965113
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-88",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-88: Improper Neutralization of Argument Delimiters in a Command",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 2.565194845199585,
+                "overall_tokens_per_sec": 11.305184108828838
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-88",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-88",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 4.130580186843872,
+                "overall_tokens_per_sec": 3.389354368325975
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-88",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-ID",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.8252639770507812,
+                "overall_tokens_per_sec": 20.599469348889237
+            }
+        }
+    ],
+    "9": [
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-22",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-22",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.3818747997283936,
+                "overall_tokens_per_sec": 8.6838547185017
+            }
+        },
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-22",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-22",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.8612301349639893,
+                "overall_tokens_per_sec": 7.521907010317598
+            }
+        },
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-22",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-22",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 2.6899237632751465,
+                "overall_tokens_per_sec": 4.832850721453795
+            }
+        },
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-22",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-22",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 4.1716978549957275,
+                "overall_tokens_per_sec": 2.8765266366617745
+            }
+        },
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-22",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-ID",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.8328189849853516,
+                "overall_tokens_per_sec": 20.41259902390315
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-88",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-88",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.3194708824157715,
+                "overall_tokens_per_sec": 9.094554612701748
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-88",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-88",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.8049118518829346,
+                "overall_tokens_per_sec": 7.756611485150817
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-88",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-88",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 2.3496150970458984,
+                "overall_tokens_per_sec": 5.532821106037544
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-88",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-88",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 4.40753698348999,
+                "overall_tokens_per_sec": 2.722609031971893
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-88",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-ID",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.8279848098754883,
+                "overall_tokens_per_sec": 20.531777633162676
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-131",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-131",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.1249430179595947,
+                "overall_tokens_per_sec": 10.667206968194199
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-131",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-131",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.5943570137023926,
+                "overall_tokens_per_sec": 9.408181399200684
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-131",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-131",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 2.1197431087493896,
+                "overall_tokens_per_sec": 6.1328186167189696
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-131",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-131",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 3.88667893409729,
+                "overall_tokens_per_sec": 3.0874688142428437
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-131",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-ID",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.8025569915771484,
+                "overall_tokens_per_sec": 21.18229630844331
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-20",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-20",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.272326946258545,
+                "overall_tokens_per_sec": 9.43153804553749
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-20",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-200",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 1.7864460945129395,
+                "overall_tokens_per_sec": 8.396558981584962
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-20",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-20",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 2.3736350536346436,
+                "overall_tokens_per_sec": 6.740716090917136
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-20",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-20",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 4.336814880371094,
+                "overall_tokens_per_sec": 3.228175604950434
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-20",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-ID",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.8249452114105225,
+                "overall_tokens_per_sec": 20.607429153910427
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-667",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-667",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.0821881294250488,
+                "overall_tokens_per_sec": 11.088645008863136
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-667",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-399",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 1.6868228912353516,
+                "overall_tokens_per_sec": 8.892456984037423
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-667",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-667",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 2.4084222316741943,
+                "overall_tokens_per_sec": 5.3977246302709805
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-667",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-667",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 4.127791881561279,
+                "overall_tokens_per_sec": 2.9071233105534304
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-667",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-ID",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.8616230487823486,
+                "overall_tokens_per_sec": 19.73020571353623
+            }
+        }
+    ],
+    "10": [
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-200",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-200",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.1169731616973877,
+                "overall_tokens_per_sec": 10.743319903733784
+            }
+        },
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-200",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-200",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.587601900100708,
+                "overall_tokens_per_sec": 9.448212425954194
+            }
+        },
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-200",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-200",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 2.373295783996582,
+                "overall_tokens_per_sec": 5.477614753146471
+            }
+        },
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-200",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-200",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 4.4263341426849365,
+                "overall_tokens_per_sec": 2.7110470229256145
+            }
+        },
+        {
+            "iteration": 1,
+            "target_cwe": "CWE-200",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-ID",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.8111898899078369,
+                "overall_tokens_per_sec": 20.956868683276426
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-59",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-22",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 1.2368700504302979,
+                "overall_tokens_per_sec": 9.701908454995163
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-59",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-22",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 1.7530510425567627,
+                "overall_tokens_per_sec": 7.986076651585397
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-59",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-22",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 2.8129210472106934,
+                "overall_tokens_per_sec": 4.621530352901609
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-59",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-59",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 4.781821966171265,
+                "overall_tokens_per_sec": 2.927754336954037
+            }
+        },
+        {
+            "iteration": 2,
+            "target_cwe": "CWE-59",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-ID",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.8093109130859375,
+                "overall_tokens_per_sec": 18.53428609136673
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-310",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-310",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.5248439311981201,
+                "overall_tokens_per_sec": 7.869657841357708
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-310",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-20",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 2.0873210430145264,
+                "overall_tokens_per_sec": 6.707161817226297
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-310",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-263",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 3.1891660690307617,
+                "overall_tokens_per_sec": 5.0169855233856335
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-310",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-310",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 5.540986061096191,
+                "overall_tokens_per_sec": 2.1656795140224556
+            }
+        },
+        {
+            "iteration": 3,
+            "target_cwe": "CWE-310",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-ID",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.8492879867553711,
+                "overall_tokens_per_sec": 20.016767298154047
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-79",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-79",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.470944881439209,
+                "overall_tokens_per_sec": 8.158021521689447
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-79",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-79",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 3.3990821838378906,
+                "overall_tokens_per_sec": 4.118758901025645
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-79",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-79",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 2.522066831588745,
+                "overall_tokens_per_sec": 5.154502583823605
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-79",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-79",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 4.010617017745972,
+                "overall_tokens_per_sec": 3.4907347019307804
+            }
+        },
+        {
+            "iteration": 4,
+            "target_cwe": "CWE-79",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-ID",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.5985889434814453,
+                "overall_tokens_per_sec": 28.400123632632642
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-88",
+            "model": "llama3.2:3b",
+            "predicted_cwe": "CWE-88",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 1.465256929397583,
+                "overall_tokens_per_sec": 8.189689984904973
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-88",
+            "model": "gemma3:4b",
+            "predicted_cwe": "CWE-88",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 2.001495122909546,
+                "overall_tokens_per_sec": 6.994770978831261
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-88",
+            "model": "phi4-mini",
+            "predicted_cwe": "CWE-88",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 2.5571560859680176,
+                "overall_tokens_per_sec": 5.083772582884325
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-88",
+            "model": "llama3:8b",
+            "predicted_cwe": "CWE-88",
+            "is_correct": true,
+            "metrics": {
+                "total_time_sec": 3.9989778995513916,
+                "overall_tokens_per_sec": 3.00076677126577
+            }
+        },
+        {
+            "iteration": 5,
+            "target_cwe": "CWE-88",
+            "model": "smollm2:360m",
+            "predicted_cwe": "CWE-ID",
+            "is_correct": false,
+            "metrics": {
+                "total_time_sec": 0.5886437892913818,
+                "overall_tokens_per_sec": 28.879944559450553
+            }
+        }
+    ]
+}
